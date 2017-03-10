@@ -77,6 +77,140 @@
 	    
 	    }
 	    h1 {background-color:#ccc;}
+	    body {
+  margin: 50px 0;
+}
+
+.ticker-headline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 15px 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.carousel.vertical .carousel-inner {
+  height: 100%;
+  width: auto;
+  > .item {
+    width: auto;
+    padding-right: 50px;
+    transition: 0.6s ease-in-out top;
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      transition: 0.6s ease-in-out;
+      &.next,
+      &.active.right {
+        transform: translate3d(0, 100%, 0);
+        top: 0;
+      }
+      &.prev,
+      &.active.left {
+        transform: translate3d(0, -100%, 0);
+        top: 0;
+      }
+      &.next.left,
+      &.prev.right,
+      &.active {
+        transform: translate3d(0, 0, 0);
+        top: 0;
+      }
+    }
+  }
+  > .active,
+  > .next,
+  > .prev {
+    display: block;
+  }
+  > .active {
+    top: 0;
+  }
+  > .next,
+  > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  > .next {
+    top: 100%;
+  }
+  > .prev {
+    top: -100%;
+  }
+  > .next.left,
+  > .prev.right {
+    top: 0;
+  }
+  > .active.left {
+    top: -100%;
+  }
+  > .active.right {
+    top: 100%;
+  }
+}
+
+.carousel.vertical {
+  .carousel-control {
+    left: auto;
+    width: 50px;
+    &.up {
+      top: 0;
+      right: 0;
+      bottom: 50%;
+    }
+    &.down {
+      top: 50%;
+      right: 0;
+      bottom: 0;
+    }
+    // Toggles
+    .icon-prev,
+    .icon-next,
+    .glyphicon-chevron-up,
+    .glyphicon-chevron-down {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+    }
+    .icon-prev,
+    .glyphicon-chevron-up {
+      left: 50%;
+      margin-left: -10px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    .icon-next,
+    .glyphicon-chevron-down {
+      left: 50%;
+      margin-left: -10px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    .icon-up,
+    .icon-down {
+      width: 20px;
+      height: 20px;
+      //margin-top: -10px;
+      line-height: 1;
+      font-family: serif;
+    }
+    .icon-prev {
+      &:before {
+        content: '\2039';
+        // SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+
+      }
+    }
+    .icon-next {
+      &:before {
+        content: '\203a';
+        // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+
+      }
+    }
+  }
+}
 	</style>
     
 </head>
@@ -512,38 +646,53 @@ _________________________________________________________ -->
 	</div>
 </div>
 
-<div id="heading-breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h1>WHAT WE GOT</h1>
-                    </div>
-                    <div class="col-md-5">
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Home</a>
-                            </li>
-                            <li>WHAT WE GOT</li>
-                        </ul>
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap Vertical Carousel</h1>
+    <p class="lead">Out of the box, Bootstrap only comes with a traditional horizontal  carousel. This Pen has the HTML and CSS to get it to animate vertically with up/down carousel controls.</p>
+  </div>
+</div>
 
-                    </div>
-                </div>
-            </div>
+<div class="bg-info">
+  <div class="container">
+    <div id="carousel-example-vertical" class="carousel vertical slide">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <p class="ticker-headline">
+                 <a href="#">
+              <strong>>>></strong> <img src="../loganweb/img/portfolio-3.jpg"  class="img-responsive" width="1000" height="750">
+            </a>
+          </p>
         </div>
-
-        <div id="content">
-            <div class="container">
-
-                <section>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="heading">
-                                <h2>LATEST SHOW RECAP</h2>
-                            </div>
-
-                            <p class="lead">Check out the videos and subscribe!</p>
-                        </div>
-                    </div>
+        <div class="item">
+          <p class="ticker-headline">
+                <a href="#">
+              <strong>>>></strong> <img src="../loganweb/img/portfolio-3.jpg"  class="img-responsive" width="1000" height="750">
+            </a>
+          </p>
+        </div>
+        <div class="item">
+          <p class="ticker-headline">
+                 <a href="#">
+              <strong>>>></strong> <img src="../loganweb/img/portfolio-3.jpg"  class="img-responsive" width="1000" height="750">
+            </a>
+          </p>
+        </div>
+        <div class="item">
+          <p class="ticker-headline">
+                  <a href="#">
+              <strong>>>></strong> <img src="../loganweb/img/portfolio-3.jpg"  class="img-responsive" width="1000" height="750">
+            </a>
+          </p>
+        </div>
+        <div class="item">
+          <p class="ticker-headline">
+            <a href="#">
+              <strong>>>></strong> <img src="../loganweb/img/portfolio-3.jpg"  class="img-responsive" width="1000" height="750">
+            </a>
+          </p>
+        </div>
+      </div>
 
 				
 
