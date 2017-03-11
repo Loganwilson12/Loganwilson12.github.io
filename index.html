@@ -77,140 +77,7 @@
 	    
 	    }
 	    h1 {background-color:#ccc;}
-	    body {
-  margin: 50px 0;
-}
-
-.ticker-headline {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 15px 0;
-  margin: 0;
-  font-size: 18px;
-}
-
-.carousel.vertical .carousel-inner {
-  height: 100%;
-  width: auto;
-  > .item {
-    width: auto;
-    padding-right: 50px;
-    transition: 0.6s ease-in-out top;
-    @media all and (transform-3d), (-webkit-transform-3d) {
-      transition: 0.6s ease-in-out;
-      &.next,
-      &.active.right {
-        transform: translate3d(0, 100%, 0);
-        top: 0;
-      }
-      &.prev,
-      &.active.left {
-        transform: translate3d(0, -100%, 0);
-        top: 0;
-      }
-      &.next.left,
-      &.prev.right,
-      &.active {
-        transform: translate3d(0, 0, 0);
-        top: 0;
-      }
-    }
-  }
-  > .active,
-  > .next,
-  > .prev {
-    display: block;
-  }
-  > .active {
-    top: 0;
-  }
-  > .next,
-  > .prev {
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  > .next {
-    top: 100%;
-  }
-  > .prev {
-    top: -100%;
-  }
-  > .next.left,
-  > .prev.right {
-    top: 0;
-  }
-  > .active.left {
-    top: -100%;
-  }
-  > .active.right {
-    top: 100%;
-  }
-}
-
-.carousel.vertical {
-  .carousel-control {
-    left: auto;
-    width: 50px;
-    &.up {
-      top: 0;
-      right: 0;
-      bottom: 50%;
-    }
-    &.down {
-      top: 50%;
-      right: 0;
-      bottom: 0;
-    }
-    // Toggles
-    .icon-prev,
-    .icon-next,
-    .glyphicon-chevron-up,
-    .glyphicon-chevron-down {
-      position: absolute;
-      top: 50%;
-      z-index: 5;
-      display: inline-block;
-    }
-    .icon-prev,
-    .glyphicon-chevron-up {
-      left: 50%;
-      margin-left: -10px;
-      top: 50%;
-      margin-top: -10px;
-    }
-    .icon-next,
-    .glyphicon-chevron-down {
-      left: 50%;
-      margin-left: -10px;
-      top: 50%;
-      margin-top: -10px;
-    }
-    .icon-up,
-    .icon-down {
-      width: 20px;
-      height: 20px;
-      //margin-top: -10px;
-      line-height: 1;
-      font-family: serif;
-    }
-    .icon-prev {
-      &:before {
-        content: '\2039';
-        // SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
-
-      }
-    }
-    .icon-next {
-      &:before {
-        content: '\203a';
-        // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
-
-      }
-    }
-  }
-}
+	    
 	</style>
     
 </head>
@@ -646,53 +513,46 @@ _________________________________________________________ -->
 	</div>
 </div>
 
-<div class="container">
-  <div class="page-header">
-    <h1>Latest Show Recap</h1>
-    <p class="lead">we are better than average lol</p>
-  </div>
-</div>
 
-<div class="bg-info">
-  <div class="container">
-    <div id="carousel-example-vertical" class="carousel vertical slide">
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <p class="ticker-headline">
-                 <a href="#">
-              <strong>>>></strong> <img src="https://p.fod4.com/p/media/7935b86312/M6oXi0iTtSQulCkUchAs_giphy-2.gif"  class="img-responsive" width="1000" height="750">
-            </a>
-          </p>
-        </div>
-        <div class="item">
-          <p class="ticker-headline">
-                <a href="#">
-              <strong>>>></strong> <img src="https://p.fod4.com/p/media/7935b86312/HYTHDiRMRJOMMCZoDZGv_anchorman-teamjump.gif"  class="img-responsive" width="1000" height="750">
-            </a>
-          </p>
-        </div>
-        <div class="item">
-          <p class="ticker-headline">
-                 <a href="#">
-              <strong>>>></strong> <img src="https://p.fod4.com/p/media/7935b86312/IUaD05sTRwqbZPPEUIKy_will-ferrell-2.gif"  class="img-responsive" width="1000" height="750">
-            </a>
-          </p>
-        </div>
-        <div class="item">
-          <p class="ticker-headline">
-                  <a href="#">
-              <strong>>>></strong> <img src="https://p.fod4.com/p/media/7935b86312/mp1GBAMRDyUOuptqpySE_tumblr_lxirmuAR7e1r2ewajo1_500.gif"  class="img-responsive" width="1000" height="750">
-            </a>
-          </p>
-        </div>
-        <div class="item">
-          <p class="ticker-headline">
-            <a href="#">
-              <strong>>>></strong> <img src="https://p.fod4.com/p/media/7935b86312/SaXygEFPS16jWitmdRBT_giphy-1.gif"  class="img-responsive" width="1000" height="750">
-            </a>
-          </p>
-        </div>
-      </div>
+         <h4>Latest Show Recap</h4>
+
+                    <div class="photostream">
+                        <div>
+                            <a href="#">
+                                <img src="img/detailsquare.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="img/detailsquare2.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="img/detailsquare3.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="img/detailsquare3.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="img/detailsquare2.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="img/detailsquare.jpg" class="img-responsive" alt="#">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.col-md-3 -->
+            </div>
+     
 
 				
 
