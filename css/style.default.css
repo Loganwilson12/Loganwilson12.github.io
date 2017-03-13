@@ -1776,7 +1776,7 @@ fieldset[disabled] .btn-template-primary.active {
 .bar.background-image-fixed-2 {
   background: url('https://i347.photobucket.com/albums/p447/logothepogo1212/cdero_zpsdce9ojca.jpg') center top no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; 
 }
 .bar.color-white h1,
 .bar.color-white h2,
@@ -2252,8 +2252,12 @@ fieldset[disabled] .btn-template-primary.active {
 }
 @media (max-width: 767px) {
   .product .image img.img-responsive {
-    min-width: 100%;
-  }
+    min-width: 100%;  }
+    .bar.background-image-fixed-2 {
+  background: url('https://i347.photobucket.com/albums/p447/logothepogo1212/cdero_zpsdce9ojca.jpg');
+  min-width:100%;
+}
+
 }
 .product .text {
   padding: 10px;
