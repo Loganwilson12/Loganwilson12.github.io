@@ -799,6 +799,16 @@ fieldset[disabled] .btn-template-primary.active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+jumbotrontwo {
+  padding: 30px;
+  margin-bottom: 0;
+  position: relative;
+  background: url('https://gph.is/XKssa2') center center repeat;
+  background-size: cover;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 .jumbotron .dark-mask {
   position: absolute;
   top: 0;
