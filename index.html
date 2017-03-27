@@ -582,80 +582,75 @@ _________________________________________________________ -->
             </div>
         </section>
 
-    
-                <!-- START OF PICS OF CREW or BRANDING -->
+    <div class="bgimg-1">
+  <div class="caption">
+ 
+  </div>
+</div>
 
-                <!-- /.col-md-3 -->
+<div style="color: #ddd;background-color:#282E34;text-align:center;padding:0px;text-align: justify;">
+  <h3 style="text-align:center;"><link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<div class="container">
+    <div class="fb-profile">
+        <img align="left" class="fb-image-lg img-responsive" src="img/girlie.jpg"  style="margin-left:0px !important;min-width:100% !important; max-height:75%;"alt="Profile image example"/>
+        <img align="left" class="fb-image-profile thumbnail" src="" alt="Profile image G" style="display:none;"/>
+        <div class="fb-profile-text">
+            <h1 style="color:white;">Cordero &amp; HH Promotions</h1>
+            
+        </div>
+    </div>
+</div> <!-- /container -->  </h3>
+  
+</div>
 
-                <div class="col-md-12 col-sm-12 col-lg-12">
+<div class="bgimg-2">
+  <div class="caption" id="mish">
+    <span class="border"  style="background-color:transparent;font-size:16px;color: #;text-shadow: 2px 2px 8px #000000;">tell me stuff</span>
+  </div>
+</div>
 
-                    <h4 style="color:#fff;padding-top:1em;margin-bottom:0.33em;margin-top:0.33em;">Contact</h4>
+<div style="position:relative;">
+  <div style="color:#090;background-color:#282E34;text-align:center;padding:50px 80px;text-align:center; justify;">
+    <p>These are dope shows tho<span style="color:red;"></span>
+</p>
+  </div>
+</div>
 
-                    <p><strong>Cordero HH Promotions .</strong>
-                        <br> 123 Cordero Street.
-                        <br>Dickey
-                        <br>IL
-                        <br>60007
-                        <br>
-                        <strong>USA</strong>
-                    </p>
+<div class="bgimg-3">
+  <div class="caption" id="secondhead">
+    <span class="border" style="background-color:transparent;font-size:18px;color: #ccc;">yoo <a href="#">click here</a><br>$10 off<br>drama</span>
+  </div>
+</div>
 
-                    <a href="index.html" class="btn btn-small btn-template-main">Go to Home</a>
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align:center; justify;">
+    <p>TEST1</p>
+  </div>
+</div>
 
-                    <hr class="hidden-md hidden-lg hidden-sm">
-
-                </div>
-			<div class="okl">
-                        
-                             <div class="social" style="margin:auto;align-items:center;justify-content:center; margin-left:1em;padding-bottom:1em;">
-                                <a href="https://www.facebook.com" class="external facebook" data-animate-hover="pulse"><i  onClick="www.facebook.com"class="fa fa-facebook"></i></a>
-                                <a href="https://www.youtube.com" class="external instagram" data-animate-hover="pulse"><i class="fa fa-youtube-square"></i></a>
-                                <a href="https://www.twitter.com" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
-                                <a href="https://www.instagram.com" class="external instagram" data-animate-hover="pulse"><i class="fa fa-instagram"></i></a>
-				                 
-                            </div>
-
-                <!-- /.col-md-3 -->
-
-
-
-              
-                </div>
-                <!-- /.col-md-3 -->
-            </div>
-            <!-- /.container -->
-        </footer>
-        <!-- /#footer -->
-
-        <!-- *** FOOTER END *** -->
-
-        <!-- *** COPYRIGHT ***
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border"> Cordero & HH Promotion 2017&copy;</span>
+  </div>
+</div>
+<!---------------- *** TOP info ***------------------------------------------
 _________________________________________________________ -->
 
-        <div id="copyright">
-            <div class="container">
-                <div class="col-md-12">
-                    <p class="pull-left" id="chgcolor">© 2017. Cordero &amp; HH Promotions</p>
-                    <p class="pull-right"> <a href="http://www.CHHPromo.com">.</a> .<a href="CorderoHHPromotion.com">.</a> 
-                      
-                    </p>
 
-                </div>
-            </div>
-        </div>
-        <!-- /#copyright -->
 
-        <!-- *** COPYRIGHT END *** -->
+          
+       </header>
+       </div>
+       </body>
 
       
 
         <!--    <p>
                 <img class="img-responsive" src="new" alt="">
             </p>
-
         </div> -->
 
-    </div>
+    
     <!-- /#all -->
 
     <!-- #### JAVASCRIPT FILES ### -->
@@ -680,7 +675,6 @@ _________________________________________________________ -->
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
@@ -692,6 +686,198 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
 }
+<!--strtt-->
+$(document).ready(function() {
+  
+  var $scene = $(".scene"),
+      $content = $(".content"),
+      $back = $(".back"),
+      $backBgs = $(".back__bg"),
+      $front = $(".front"),
+      $frontBgs = $(".front__bg"),
+      $menuBlock = $(".menu__block"),
+      $svgPath = $(".menu__block-svgPath"),
+      animating = false,
+      menuActive = false,
+      menuAnimTime = 600,
+      blockAnimTime = 1500,
+      $sliderCont = $(".menu-slider__content"),
+      curSlide = 1,
+      sliderXDiff = 0,
+      curPage = 1,
+      nextPage = 0,
+      numOfPages = $(".front__bg").length,
+      scaleTime = 500,
+      transTime = 500,
+      totalTime = scaleTime + transTime,
+      changeTimeout,
+      timeoutTime = 8000,
+      winW = $(window).width(),
+      winH = $(window).height();
+  
+  // init nav element timeout animation
+  $(".nav__el-1").addClass("active");
+  
+  //default debounce function from David Walsh blog
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+  
+  function changePages() {
+    $(".back__bg, .front__bg, .nav__el").removeClass("active");
+    $(".nav__el-"+curPage).addClass("active");
+    $back.css("transform", "translate3d(0,"+(curPage-1)*-100+"%,0)");
+    $front.css("transform", "translate3d(0,"+(curPage-1)*100+"%,0)");
+    createTimeout();
+    setTimeout(function() {
+      $(".back__bg-"+curPage+", .front__bg-"+curPage).addClass("active");
+    }, totalTime);
+  };
+  
+  $(document).on("click", ".nav__el:not(.active)", function() {
+    curPage = $(this).attr("data-page");
+    changePages();
+  });
+  
+  // ugly hack for animation reset when you coming back from menu section
+  function resetTimeoutAnimation() {
+    var $activeNavEl = $(".nav__el.active"),
+        $activeParts = $activeNavEl.find(".nav__el-clone, .nav__el")
+    $activeParts.addClass("instant");
+    $activeNavEl.removeClass("active");
+    $activeParts.css("top");
+    $activeParts.removeClass("instant");
+    $activeParts.css("top");
+    $activeNavEl.addClass("active");
+  }
+  
+  /* creates timeOut for change of slides.
+  Call's itself from inside of changePages() function
+  */
+  function createTimeout() {
+    window.clearTimeout(changeTimeout);
+    resetTimeoutAnimation();
+    changeTimeout = setTimeout(function() {
+      if (curPage >= numOfPages) {
+        curPage = 1;
+      } else {
+        curPage++;
+      }
+      changePages();
+    }, timeoutTime);
+  };
+  
+  createTimeout();
+  
+  /* creates path D attribute strings for animation
+  initial d = fullScreen
+  mid d = Q curves with 5% padding
+  final d = centered 90% width/height block
+  */
+  function createD(type) {
+    var types = {"init": ["M0,0",
+                          "Q"+winW/2+",0",
+                          winW+",0",
+                          "Q"+winW+","+winH/2,
+                          winW+","+winH,
+                          "Q"+winW/2+","+winH,
+                          "0,"+winH,
+                          "Q0,"+winH/2,
+                          "0,0"],
+                 "mid": ["M0,0",
+                         "Q"+winW/2+","+winH*0.05,
+                         winW+",0",
+                         "Q"+winW*0.95+","+winH/2,
+                         winW+","+winH,
+                         "Q"+winW/2+","+winH*0.95,
+                         "0,"+winH,
+                         "Q"+winW*0.05+","+winH/2,
+                         "0,0"],
+                 "final": ["M"+winW*0.05+","+winH*0.05,
+                           "Q"+winW/2+","+winH*0.05,
+                           winW*0.95+","+winH*0.05,
+                           "Q"+winW*0.95+","+winH/2,
+                           winW*0.95+","+winH*0.95,
+                           "Q"+winW/2+","+winH*0.95,
+                           winW*0.05+","+winH*0.95,
+                           "Q"+winW*0.05+","+winH/2,
+                           winW*0.05+","+winH*0.05]};
+    return types[type].join(" ");
+  }
+  
+  // animates path d with SnapSVG
+  function animateBlock(reverse) {
+    winW = $(window).width();
+    winH = $(window).height();
+    var initD = createD("init"),
+        midD = createD("mid"),
+        finalD = createD("final");
+    
+    if (!reverse) {
+      $svgPath.attr("d", initD);
+      Snap($svgPath[0]).animate({"path": midD}, blockAnimTime/2, mina.elastic, function() {
+        Snap($svgPath[0]).animate({"path": finalD}, blockAnimTime/2, mina.elastic);
+      });
+    } else {
+      Snap($svgPath[0]).animate({"path": midD}, blockAnimTime/2, mina.elastic, function() {
+        Snap($svgPath[0]).animate({"path": initD}, blockAnimTime/2, mina.elastic);
+      });
+    }
+    
+  };
+  
+  // resizes opened menu path d block, because i can't change viewBox with js
+  var resizeSvg = debounce(function() {
+    winW = $(window).width();
+    winH = $(window).height();
+    $svgPath.attr("d", createD("final"));
+  }, 50);
+  
+  // default madness
+  $(document).on("click", ".menu__btn", function() {
+    if (animating) return;
+    animating = true;
+    setTimeout(function() {
+      animating = false;
+    }, blockAnimTime + menuAnimTime);
+    
+    if (!menuActive) {
+      menuActive = true;
+      window.clearTimeout(changeTimeout);
+      $content.addClass("inactive");
+      $scene.addClass("menu-visible");
+      $(".back__bg:not(.active)").addClass("hidden");
+      $(window).on("resize", resizeSvg);
+      setTimeout(function() {
+        $menuBlock.addClass("visible");
+        animateBlock();
+      }, menuAnimTime);
+    } else {
+      menuActive = false;
+      animateBlock(true);
+      setTimeout(function() {
+        $menuBlock.removeClass("visible");
+        createTimeout();
+        $(".back__bg").removeClass("hidden");
+        $content.removeClass("inactive");
+        $scene.removeClass("menu-visible");
+      }, blockAnimTime);
+      $(window).off("resize");
+    }
+  });
+  
+});
 </script>
  
    
@@ -699,4 +885,3 @@ function carousel() {
 
 
 </body></html>
-
