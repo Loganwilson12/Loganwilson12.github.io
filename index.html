@@ -4,7 +4,7 @@
     <meta name="googlebot" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>logan</title>
+    <title>corderofinal</title>
 
     <meta name="keywords" content="">
 
@@ -18,7 +18,7 @@
     <link href="css/animate.css" rel="stylesheet">
 
     <!-- Theme stylesheet, if possible do not edit this stylesheet -->
-    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
 
     <!-- Custom stylesheet - for your changes -->
     <link href="css/custom.css" rel="stylesheet">
@@ -45,382 +45,463 @@
     <link href="css/owl.theme.css" rel="stylesheet">
     
     <style>
-	  
-	    
+	<!--start social-->
+	  /* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+a {
+ background-color: #000;   
+}
+<!--start social-->
+
+	   <!--divide--> 
+	   
+	   <!--start nav-->
+	   @import url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css');    
+.navbar-tt {
+  background-color: hsl(0, 69%, 22%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff", endColorstr="#999");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fff), to(#5e1111));
+  background-image: -moz-linear-gradient(top, #fff, #5e1111);
+  background-image: -ms-linear-gradient(top, #fff, #5e1111);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #999));
+  background-image: -webkit-linear-gradient(top, #000, #999);
+  background-image: -o-linear-gradient(top, #b42121, #5e1111);
+  background-image: linear-gradient(#b42121, #5e1111);
+  border-color: #5e1111 #5e1111 hsl(0, 69%, 17%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+	}
+ .navbar-tt .navbar-nav > .active > a, .navbar-tt .navbar-nav > .active > a:hover, .navbar-tt .navbar-nav > .active > a:focus {
+    color:#333;
+    background-color: transparent;
+}
+.navbar-tt .navbar-collapse, .navbar-tt .navbar-form {
+	border-color: #FFCC00;
+    border-style: none;
+    color: #4C4C4C;
+
+}
+.navbar-tt .navbar-toggle {
+    border-color: #797878;
+    color: #797878;
+}
+.navbar-tt .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+		background-color: #C0C0C0;
+	}
+.collapse.in {
+ 
+}
+.text-white {
+    color: #000;
+}
+.navbar-toggle {
+    position: absolute;
+    left: 50px;
+    margin-left: 50%;
+    padding: 0px 4px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    background-color: #9C9C9C;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-lwr {
+    top: 0px;
+    position: relative;
+    display: block;
+    margin-right: 0px;
+
+}
+.navbar-uppr {
+	display:flex;
+    margin-top: 30px;
+}
+.navbar-brand {
+	background-color:#fff;
+	float:none;
+     padding-top: 2px;
+     height: 50px;
+    display: block;
+}
+.navbar-brand > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fa-fw {
+    width: 0.8em;
+}
+@media (min-width: 768px) {
+.navbar-uppr {
+    margin-top: 0px;
+}
+
+.navbar-lwr {
+    top: 45px;
+    position: relative;
+    display: block;
+    margin-right: -325px;
+}
+.nav-tt > li {
+    border-top: thin #5A0008 none;
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fa-fw {
+    width: 1.28571429em;
+}
+}
+
+ 
+	   <!--end nav-->
+	   <!--start vid recap-->
+	   .video-list-thumbs{}
+.video-list-thumbs > li{
+    margin-bottom:12px;
+}
+.video-list-thumbs > li:last-child{}
+.video-list-thumbs > li > a{
+	display:block;
+	position:relative;
+	background-color: #111;
+	color: #fff;
+	padding: 8px;
+	border-radius:3px
+    transition:all 500ms ease-in-out;
+    border-radius:4px
+}
+.video-list-thumbs > li > a:hover{
+	box-shadow:0 2px 5px rgba(0,0,0,.3);
+	text-decoration:none
+}
+.video-list-thumbs h2{
+	bottom: 0;
+	font-size: 14px;
+	height: 33px;
+	margin: 8px 0 0;
+}
+.video-list-thumbs .glyphicon-play-circle{
+    font-size: 60px;
+    opacity: 0.6;
+    position: absolute;
+    right: 39%;
+    top: 31%;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    transition:all 500ms ease-in-out;
+}
+.video-list-thumbs > li > a:hover .glyphicon-play-circle{
+	color:#fff;
+	opacity:1;
+	text-shadow:0 1px 3px rgba(0,0,0,.8);
+}
+.video-list-thumbs .duration{
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 2px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	left: 12px;
+	line-height: 13px;
+	padding: 2px 3px 1px;
+	position: absolute;
+	top: 12px;
+    transition:all 500ms ease;
+}
+.video-list-thumbs > li > a:hover .duration{
+	background-color:#000;
+}
+@media (min-width:320px) and (max-width: 480px) { 
+	.video-list-thumbs .glyphicon-play-circle{
+    font-size: 35px;
+    right: 36%;
+    top: 27%;
+	}
+	.video-list-thumbs h2{
+		bottom: 0;
+		font-size: 12px;
+		height: 22px;
+		margin: 8px 0 0;
+	}
+}
+	   <!--end vid recap-->
+	   
+	   
+	   .dynamicTile .col-sm-2.col-xs-4{
+    padding:5px;
+}
+
+.dynamicTile .col-sm-4.col-xs-8{
+    padding:5px;
+}
+
+#tile1{
+    background: rgb(0,172,238);
+}
+
+#tile2{
+    background: rgb(243,243,243);
+}
+
+#tile3{
+    background: rgb(71,193,228);
+}
+
+#tile4{
+    background-image: url('http://handsontek.net/demoimages/tiles/facebook.png');
+    background-size: cover;
+}
+
+#tile5{
+    background: rgb(175,26,63);
+}
+
+#tile6{
+    background: rgb(62,157,215);
+}
+
+#tile7{
+    background: white;
+}
+
+#tile8{
+    background: rgb(209,70,37);
+}
+
+#tile9{
+    background: rgb(0,142,0);
+}
+
+#tile10{
+    background: rgb(0,93,233);
+}
+
+.tilecaption{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); 
+    margin:0!important;
+    text-align: center;
+    color:white;
+    font-family: Segoe UI;
+    font-weight: lighter;
+}
+
+<!--stART FOOTER-->
+.search-text{
+	margin-top:50px;
+	background-color:#000;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+	
+.search-text .input-search{
+	height:45px;
+	width:400px;
+	padding-left:20px;
+    color:#333;
+} 
+
+.search-text .btn-search{
+	background-color:#000;
+	border:1px solid #FFF;
+	font-family:Roboto;
+	color:#FFF;
+	padding:11px 20px 11px 20px;
+}
+
+.search-text  .btn-search:hover{
+	background-color:#FFF;
+	color:;
+}
+
+.copyright{
+    background-color:#f0f0f0;
+}
+
+.copyright p{
+	font-family:Roboto;
+	padding:0px 0 10px 0;
+}
+
+footer{
+	background-color:#000;
+	min-height:200px;
+	padding:35px 0 50px 0;
+}
+
+footer .menu li a{
+	font-family:Roboto;
+	
+	padding:7px;
+	text-decoration:none;
+}
+
+footer .menu li a:hover{
+	
+}
+
+.fa.fa-facebook , .fa.fa-dropbox, .fa.fa-flickr , .fa.fa-github , .fa.fa-linkedin ,.fa,fa-tumblr ,.fa.fa-google-plus , .fa.fa-tumblr {
+	
+	font-size:20px;
+	padding:5px;
+	margin-bottom:30px;
+}
+
+.fa.fa-facebook:hover , .fa.fa-dropbox:hover , .fa.fa-flickr:hover  , .fa.fa-github:hover  , .fa.fa-linkedin:hover  ,.fa,fa-tumblr:hover  ,.fa.fa-google-plus:hover  , .fa.fa-tumblr:hover  {
+	
+}
+
+
+
+
+
 	</style>
     
 </head>
-
-<body style="">
-
-    <div id="all">
-
-        <header>
-
-<!---------------- *** TOP info ***------------------------------------------
-_________________________________________________________ -->
+<body>
 
 
 
-            <div id="top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-5 contact">
-                            <p class="hidden-sm hidden-xs"></p>
-                            <p class="hidden-md hidden-lg"><a href="tel:630-402-5598" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>  <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-                            </p>
-                        </div>
-                        <div class="col-xs-7">
-                            <div class="social">
-                                <a href="https://www.facebook.com" class="external facebook" data-animate-hover="pulse"><i  onClick="www.facebook.com"class="fa fa-facebook"></i></a>
-                                <a href="https://www.youtube.com" class="external instagram" data-animate-hover="pulse"><i class="fa fa-youtube-square"></i></a>
-                                <a href="https://www.twitter.com" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
-                                <a href="https://www.instagram.com" class="external instagram" data-animate-hover="pulse"><i class="fa fa-instagram"></i></a>
-				                 
-                            </div>
-
-                            <div class="login">
-                                <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
-                                <a href="customer-register.html"><i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">Sign up</span></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
- <!-------------- *** TOP END *** ---------------------------------------->
-
-            <!-- *** NAVBAR ***
-    _________________________________________________________ -->
-
-            <div class="navbar-affixed-top affix-top" data-spy="affix" data-offset-top="200">
-
-                <div class="navbar navbar-default yamm" role="navigation" id="navbar" style="background-color:#999;">
-
-                    <div class="container">
-                        <div class="navbar-header" style="background-color:#999;width:100%;">
-
-                            <a class="navbar-brand home" href="index.html">
-                                <img src="img/images/roelogofinal1.png" class="img-responsive" alt="cordero logo" id="yogo" >
-                                <!--<img src="img/logo-small.png" class="img-responsive" alt="Universal logo" class="visible-xs visible-sm">--><span class="sr-only">Cordero &amp; HH Productions - go to homepage</span>
-                            </a>
-                            <div class="navbar-buttons">
-                                <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <i class="fa fa-align-justify"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!--/.navbar-header -->
-
-                        <div class="navbar-collapse collapse" id="navigation" style="background-color:#999;">
-
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown active">
-                                    <a href="javascript: void(0)" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="index3.html">Upcoming Shows </a>
-                                        </li>
-                                        <li><a href="index5.html">Tickets</a>
-                                        </li>
-                                        <li><a href="index4.html">My Artists</a>
-                                        </li>
-					<li><a href="index2.html">Cyphers</a>
-					</li>
-					<li><a href="index6.html">Photos</a>
-                                        </li>
-                                   
-                                    </ul>
-                                </li>
-                                <li class="dropdown use-yamm yamm-fw" id="feat">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <div class="yamm-content">
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <img src="img/template-easy-customize.png" class="img-responsive hidden-xs" alt="">
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <h5>Shortcodes</h5>
-                                                        <ul>
-                                                            <li><a href="template-accordions.html">Accordions</a>
-                                                            </li>
-                                                            <li><a href="template-alerts.html">Alerts</a>
-                                                            </li>
-                                                            <li><a href="template-buttons.html">Buttons</a>
-                                                            </li>
-                                                            <li><a href="template-content-boxes.html">Content boxes</a>
-                                                            </li>
-                                                            <li><a href="template-blocks.html">Horizontal blocks</a>
-                                                            </li>
-                                                            <li><a href="template-pagination.html">Pagination</a>
-                                                            </li>
-                                                            <li><a href="template-tabs.html">Tabs</a>
-                                                            </li>
-                                                            <li><a href="template-typography.html">Typography</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <h5>Header variations</h5>
-                                                        <ul>
-                                                            <li><a href="template-header-default.html">Default sticky header</a>
-                                                            </li>
-                                                            <li><a href="template-header-nosticky.html">No sticky header</a>
-                                                            </li>
-                                                            <li><a href="template-header-light.html">Light header</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                             
-                                <li class="dropdown use-yamm yamm-fw" id="byeallpg">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">All Pages <b class="caret"></b></a>
-                                  <!--starts here | divide- drop-down "all pages" -->
-                                  <ul class="dropdown-menu">
-                                        <li>
-                                            <div class="yamm-content">
-                                                <div class="row">
-                                                    <div class="col-sm-3">
-                                                        <h5>Home</h5>
-                                                        <ul>
-                                                            <li><a href="index.html">Option 1: Default Page</a>
-                                                            </li>
-                                                            <li><a href="index2.html">Option 2: Application</a>
-                                                            </li>
-                                                            <li><a href="index3.html">Option 3: Startup</a>
-                                                            </li>
-                                                            <li><a href="index4.html">Option 4: Agency</a>
-                                                            </li>
-                                                            <li><a href="index5.html">Option 5: Portfolio</a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>About</h5>
-                                                        <ul>
-                                                            <li><a href="about.html">About us</a>
-                                                            </li>
-                                                            <li><a href="team.html">Our team</a>
-                                                            </li>
-                                                            <li><a href="team-member.html">Team member</a>
-                                                            </li>
-                                                            <li><a href="services.html">Services</a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>Marketing</h5>
-                                                        <ul>
-                                                            <li><a href="packages.html">Packages</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                   <!--next dropdown -->
-                                                    <div class="col-sm-3">
-                                                        <h5>Portfolio</h5>
-                                                        <ul>
-                                                            <li><a href="portfolio-2.html">2 columns</a>
-                                                            </li>
-                                                            <li><a href="portfolio-no-space-2.html">2 columns with negative space</a>
-                                                            </li>
-                                                            <li><a href="portfolio-3.html">3 columns</a>
-                                                            </li>
-                                                            <li><a href="portfolio-no-space-3.html">3 columns with negative space</a>
-                                                            </li>
-                                                            <li><a href="portfolio-4.html">4 columns</a>
-                                                            </li>
-                                                            <li><a href="portfolio-no-space-4.html">4 columns with negative space</a>
-                                                            </li>
-                                                            <li><a href="portfolio-detail.html">Portfolio - detail</a>
-                                                            </li>
-                                                            <li><a href="portfolio-detail-2.html">Portfolio - detail 2</a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>User pages</h5>
-                                                        <ul>
-                                                            <li><a href="customer-register.html">Register / login</a>
-                                                            </li>
-                                                            <li><a href="customer-orders.html">Orders history</a>
-                                                            </li>
-                                                            <li><a href="customer-order.html">Order history detail</a>
-                                                            </li>
-                                                            <li><a href="customer-wishlist.html">Wishlist</a>
-                                                            </li>
-                                                            <li><a href="customer-account.html">Customer account / change password</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <h5>Shop</h5>
-                                                        <ul>
-                                                            <li><a href="shop-category.html">Category - sidebar right</a>
-                                                            </li>
-                                                            <li><a href="shop-category-left.html">Category - sidebar left</a>
-                                                            </li>
-                                                            <li><a href="shop-category-full.html">Category - full width</a>
-                                                            </li>
-                                                            <li><a href="shop-detail.html">Product detail</a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>Shop - order process</h5>
-                                                        <ul>
-                                                            <li><a href="shop-basket.html">Shopping cart</a>
-                                                            </li>
-                                                            <li><a href="shop-checkout1.html">Checkout - step 1</a>
-                                                            </li>
-                                                            <li><a href="shop-checkout2.html">Checkout - step 2</a>
-                                                            </li>
-                                                            <li><a href="shop-checkout3.html">Checkout - step 3</a>
-                                                            </li>
-                                                            <li><a href="shop-checkout4.html">Checkout - step 4</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <h5>Contact</h5>
-                                                        <ul>
-                                                            <li><a href="contact.html">Contact</a>
-                                                            </li>
-                                                            <li><a href="contact2.html">Contact - version 2</a>
-                                                            </li>
-                                                            <li><a href="contact3.html">Contact - version 3</a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>Pages</h5>
-                                                        <ul>
-                                                            <li><a href="text.html">Text page</a>
-                                                            </li>
-                                                            <li><a href="text-left.html">Text page - left sidebar</a>
-                                                            </li>
-                                                            <li><a href="text-full.html">Text page - full width</a>
-                                                            </li>
-                                                            <li><a href="faq.html">FAQ</a>
-                                                            </li>
-                                                            <li><a href="404.html">404 page</a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>Blog</h5>
-                                                        <ul>
-                                                            <li><a href="blog.html">Blog listing big</a>
-                                                            </li>
-                                                            <li><a href="blog-medium.html">Blog listing medium</a>
-                                                            </li>
-                                                            <li><a href="blog-small.html">Blog listing small</a>
-                                                            </li>
-                                                            <li><a href="blog-post.html">Blog Post</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- /.yamm-content -->
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- ========== FULL WIDTH MEGAMENU END ================== -->
-
-                            
-                            </ul>
-
-                        </div>
-                        <!--/.nav-collapse -->
-
-
-
-                        <div class="collapse clearfix" id="search">
-
-                            <form class="navbar-form" role="search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                    <span class="input-group-btn">
-
-                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-
-                </span>
-                                </div>
-                            </form>
-
-                        </div>
-                        <!--/.nav-collapse -->
-
-                    </div>
-
-
-                </div>
-                <!-- /#navbar -->
-
-            </div>
-
-            <!-- *** NAVBAR END *** -->
-
-        </header>
-
-        <!-- *** LOGIN MODAL ***
-_________________________________________________________ -->
-
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" id="Login">Customer login</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form action="customer-orders.html" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="email_modal" placeholder="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password_modal" placeholder="password">
-                            </div>
-
-                            <p class="text-center">
-                                <button class="btn btn-template-main"><i class="fa fa-sign-in"></i> Log in</button>
-                            </p>
-
-                        </form>
-
-                        <p class="text-center text-muted">Not registered yet?</p>
-                        <p class="text-center text-muted"><a href="customer-register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
-
-                    </div>
-                </div>
-            </div>
+<!--start nav-->
+<div class="navbar navbar-default navbar-tt navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse" style="margin-left:72%;padding-left:1%;height:40px;">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-reorder"></i>          </button>
+          <a class="navbar-brand">
+    		<img alt="Brand" src="img/images/roelogofinal1.png" class="img-responsive" width="250" height="100" style="margin-left:-7%; margin-right:20px;"></a>
         </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+        <div>
+<ul class="nav navbar-nav nav-tt navbar-right navbar-uppr" style="background-color:#fff;">
+            <li class="active" style="margin-left: 15% !important;">
+              <a href="https://www.facebook.com/search/top/?q=cordero%20%26%20hh%20promotions" style="background-color:#fff;"><i class="fa fa-2x fa-facebook-official fa-fw text-white"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/YOUNGROE59" style="background-color:#fff;"><i class="fa fa-2x fa-fw fa-twitter text-white"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/youngroe5/" style="background-color:#fff;"><i class="fa fa-2x fa-fw fa-instagram text-white"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCkt8oXYP1oiO_L4Wff6Q1dA" style="background-color:#fff;"><i class="fa fa-2x fa-fw fa-youtube text-white"></i></a>
+            </li>
+            <li>
+              <a href="tel:(630)-402-5598" style="background-color:#fff;"><i class="fa fa-2x fa-fw fa-phone text-white"></i></a>
+            </li>            
+          </ul>        </div>
+          <ul class="nav navbar-nav nav-tt navbar-right navbar-lwr">
+            <li class="active">
+              <a href="#" style="background-color:#000;color:#777;">Upcoming Shows</a>
+            </li>
+            <li>
+              <a href="#">Tickets</a>
+            </li>
+            <li>
+              <a href="#">My Artists</a>
+            </li>
+            <li>
+              <a href="#">Cyphers</a>
+            </li>
 
-        <!-- *** LOGIN MODAL END *** -->
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+          </div>
+      </div>
+    </div>
 
-        <section>
-            <!-- *** HOMEPAGE CAROUSEL ***
- _________________________________________________________ -->
-<!--
-<div class="row" id="roe"> <div class="carousel slide" data-ride="carousel" id="featured">
-    <div class="carousel-inner">
-      <div class="item active"><img src="images/carousel-lifestyle.jpg" alt="Logic Feb.28"></div>
-      <div class="item"><img src="images/carousel-mission.jpg" alt="Kanye live from the hospital"></div>
-      <div class="item"><img src="images/carousel-vaccinations.jpg" alt="Chance the Rapper May 26th"></div>
-      <div class="item"><img src="images/carousel-fish.jpg" alt="Young Roe all day all night"></div>
-      <div class="item"><img src="images/carousel-exoticanimals.jpg" alt="Mick Jenkins July 23rd"></div>      
-    </div><!-- carousel-inner -->
-<!--
-    <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#featured" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-  </div>
-  </div>
--->
-<!-- Page content -->
+<!--end nav-->
 <div class="row" style="min-width:100%;overflow:hidden;">
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
-    <img src="https://j.gifs.com/mwjG03.gif" style="width:100%;margin-top:1em;">
+    <img src="https://j.gifs.com/mwjG03.gif" style="width:98%;margin-top:1em;">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3 id="one" style="display:none;">___</h3>
       <p id="e" style="display:none;"></p>    
@@ -428,7 +509,7 @@ _________________________________________________________ -->
     </div>
 
   <div class="mySlides w3-display-container w3-center">
-    <img src="https://j.gifs.com/xGx8yz.gif" style="width:100%; margin-top:1em;min-width:100%;overflow:hidden;">
+    <img src="https://j.gifs.com/xGx8yz.gif" style=" margin:auto; width:98%; margin-top:1em;min-width:98%;overflow:hidden;">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3 id="two" style="display:none;"></h3>
       <p id="e" style="display:none;"></p>    
@@ -436,28 +517,28 @@ _________________________________________________________ -->
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="https://j.gifs.com/X6lqP8.gif" style="width:110%;min-width:100%;overflow:hidden;margin-left:-1em;margin-top:1em;">
+    <img src="https://j.gifs.com/X6lqP8.gif" style="margin:auto; width:98%; margin-top:1em;min-width:98%;overflow:hidden;margin-left:-1em;margin-top:1em;">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3 id="tre" style="display:none;"></h3>
       <p id="e" style="display:none;"></p>    
     </div>
     </div>
 <div class="mySlides w3-display-container w3-center">
-    <img src="https://j.gifs.com/g5E8KZ.gif" style="width:110%; margin-top:1em;min-width:100%;overflow:hidden;margin-left:-1em;">
+    <img src="https://j.gifs.com/g5E8KZ.gif" style="margin:auto; width:98%; margin-top:1em;min-width:98%;overflow:hidden;margin-left:0;">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3 id="four" style="display:none;"></h3>
       <p id="e" style="display:none;"></p>    
     </div> 
     </div>
  <div class="mySlides w3-display-container w3-center">
-    <img src="img/images/roe.gif" style="width:110%; margin-top:1em;min-width:100%;overflow:hidden;margin-left:-1em;">
+    <img src="img/images/roe.gif" style=" margin:auto; width:98%; margin-top:1em;min-width:98%;overflow:hidden;margin-left:0;">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3 id="five" style="display:none;"></h3>
       <p id="e" style="display:none;"></p>    
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="img/images/roe1.gif" style="width:110%;margin-left:-1em;margin-top:1em;">
+    <img src="img/images/roe1.gif" style="margin:auto; width:98%; margin-top:1em;min-width:98%;overflow:hidden;margin-left:0;">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3 id="six" style="display:none;">___</h3>
       <p id="f" style="display:none;"></p>    
@@ -466,215 +547,362 @@ _________________________________________________________ -->
   <!--main carousel end-->
             <!-- *** HOMEPAGE CAROUSEL END *** -->
   
-<div class="row" style="padding-top:1em;margin-bottom:0px;">
-	<div class="col-lg-12" style="margin-left:0px;margin-bottom:0px;">
-<section class='section'style="margin-left:0px;margin-bottom:0px;">
-    <div class='masthead-image' id='master-container' style="height:50%;margin-left:0px; margin-bottom:0px;">
-        <div class='content left' style="margin-left:0px;margin-bottom:0px;">
-            <h1 id='master' style="margin-left:0px;margin-bottom:0px;">
-              <div class="scroller_left" style="text-align:left;padding-left:0px;">Check Out Our</div>
-              <div id='master-container-scroller'>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='index2.html'>Cyphers</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='#videos'>Videos</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='index3.html'>Events</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='index6.html'>Photos</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='index3.html'>Upcoming Events</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='#videos'>Video Recaps</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='index4.html'>Artists</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='https://www.facebook.com'>Social Media</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">
-                  <a class='cta-link' href='index5.html'>Tickets</a>.
-                </div>
-                <div class='master-container-scroller_item' style="margin:auto;">Newest</div>
-              </div>
-              <div style="padding-bottom:0.33em;" style="margin:auto;">Keeping it Fresh.</div>
-            </h1>
+
+<!--start social-->
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-12" align="center" style="margin-left:7%;padding-top:3%; width:80%;height:80%;">
+<div class="col-md-12">
+                    <ul class="social-network social-circle">
+                        <li><a href="tel:(630)402-5598" class="icoRss" title="Phone"><i class="fa fa-phone"></i></a></li>
+                        <li><a href="https://www.facebook.com/search/top/?q=cordero%20%26%20hh%20promotions" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/YOUNGROE59" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCkt8oXYP1oiO_L4Wff6Q1dA" class="icoGoogle" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/youngroe5/" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    </ul>				
+				</div>
+</div>
+</div>               
+<!--end social-->
+<!--start video recap paragraph-->
+<p style="margin:auto !important;">
+<h3 align="center" style="padding-bottom:3%;">Video Recaps</h3></p>
+<!--end video recap paragraph-->
+<!--start video recap-->
+<div class="container">
+
+
+
+<ul class="list-unstyled video-list-thumbs row">
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=ffFGPlMzXmQ" title="Gherbo">
+			<img src="https://j.gifs.com/wjqDqX.gif" alt="Gherbo" class="img-responsive" height="130px" />
+			<h2>LIL HERB - Hosted by Cordero &amp; HH Promotions</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">03:50</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=qwf6ID_AriY" title="Lil-Bibby">
+			<img src="https://j.gifs.com/JZ9gny.gif" alt="lilbibby" class="img-responsive" height="130px" />
+			<h2>LIL BIBBY - Hosted by Cordero &amp; HH Promotions</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">05:02</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=r81jYc9rVuA" title="King Louie">
+			<img src="https://j.gifs.com/r0lxr2.gif" alt="kingLou" class="img-responsive" height="130px" />
+			<h2>KING LOUIE - Hosted by Cordero &amp; HH Promotions</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">03:39</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-md-4 col-sm-4 col-xs-6" style="display:none;">
+		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+			<img src="https://j.gifs.com/r0lxr2.gif" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">03:15</span>
+		</a>
+	</li>
+    <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6" style="display:none;">
+		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">03:15</span>
+		</a>
+	</li>
+</ul>
+
+</div>
+<!--end video recap-->
+
+<!--start media tiles--><div class="row" style="background-color:#000;margin-top:14%;padding-top:3%;padding-bottom:5%;">
+<div class="col-sm-12 col-md-12 col-lg-12" style="">
+<div class="container dynamicTile">
+<div class="row ">
+    <div class="col-sm-2 col-xs-4">
+    	<div id="tile1" class="tile">
+        
+         <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+               <img src="http://handsontek.net/demoimages/tiles/twitter1.png" class="img-responsive"/>
+            </div>
+            <div class="item">
+               <img src="http://handsontek.net/demoimages/tiles/twitter1.png" class="img-responsive"/>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+         
+    	</div>
+	</div>
+	<div class="col-sm-2 col-xs-4">
+		<div id="tile2" class="tile">
+    	 
+         <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://yt3.ggpht.com/-jmlCgr2gjOM/AAAAAAAAAAI/AAAAAAAAAAA/I2Y4Ob-MdMM/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" class="img-responsive"/>
+            </div>
+            <div class="item">
+              <img src="https://pbs.twimg.com/media/CmS_-8YWAAAe_4T.jpg" class="img-responsive"/>
+            </div>
+            <div class="item">
+              <img src="https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/12804898_1010512992320529_8990288668061938145_n.jpg?oh=77dc2f7adce6c5f44527b7eee356597d&oe=5962DFE7" class="img-responsive"/>
+            </div>
+          </div>
+        </div>
+         
+		</div>
+	</div>
+	<div class="col-sm-2 col-xs-4">
+		<div id="tile3" class="tile">
+    	 
+        <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+               <img src="https://pbs.twimg.com/profile_images/714565773574934528/j7OTN3sF.jpg" class="img-responsive"/>
+            </div>
+            <div class="item">
+               <img src="https://pbs.twimg.com/media/C7n_1YDWsAEZN29.jpg" class="img-responsive"/>
+            </div>
+            </div>
+         </div>
+		</div>
+	</div>
+	<div class="col-sm-2 col-xs-4">
+		<div id="tile4" class="tile">
+    	 
+        <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="http://handsontek.net/demoimages/tiles/facebook3.png" class="img-responsive"/>
+            </div>
+            <div class="item">
+              <img src="http://handsontek.net/demoimages/tiles/facebook3.png" class="img-responsive"/>
+            </div>
+          </div>
+        </div>
+         
+		</div>
+	</div>
+    <div class="col-sm-2 col-xs-4">
+		<div id="tile5" class="tile">
+    	 
+         <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/14368849_671640096324729_5922508739745902151_n.jpg?oh=ec0259c69708dfb910fb46373dc35e61&oe=5968653B" class="img-responsive"/>
+            </div>
+            <div class="item">
+              <img src="https://pbs.twimg.com/media/CkOpsu7UkAEs1kF.jpg" class="img-responsive"/>
+            </div>
+          </div>
+        </div>
+         
+		</div>
+	</div>
+	<div class="col-sm-2 col-xs-4">
+		<div id="tile6" class="tile">
+    	 
+         <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://pbs.twimg.com/media/Cn7yoyLVUAATCiK.jpg" class="img-responsive"/>
+            </div>
+            <div class="item">
+              <img src="https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-0/p206x206/12508724_985055018199660_5517266210443420154_n.jpg?oh=c6cd8f5afdf561ba688cc5dd4b101232&oe=595BAA57" class="img-responsive"/>
+            </div>
+          </div>
+        </div>
+         
+		</div>
 	</div>
 </div>
- <h4 style="padding:0.3em;color:#fff;">Photo Gallery</h4>
-<div class="row" id="roe"> <div class="carousel slide" data-ride="carousel" id="featured" style="margin-left:1em;margin-right:1em;">
-    <div class="carousel-inner" style="margin:auto; width:68%;
-    padding: 0px;">
-      <div class="item active"><img src="Loganwilson12.github.io/img/images/IMG_4454.PNG" alt=""></div>
-      <div class="item"><img src="Loganwilson12.github.io/img/images/IMG_4453.PNG" alt=""></div>
-      <div class="item"><img src="Loganwilson12.github.io/img/images/IMG_4459.PNG" alt=""></div>
-      <div class="item"><img src="Loganwilson12.github.io/img/images/IMG_4464.PNG" alt="Young Roe all day all night"></div>
-      <div class="item"><img src="Loganwilson12.github.io/img/images/IMG_4460.PNG" alt="roe"></div>      
-    </div><!-- carousel-inner -->
-    <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#featured" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-  </div>
-  </div>
 
-
-<a name="videos"></a>
-		<h4 style="padding:0.3em;color:#fff;">Latest Show Recap </h4>
-
-                    <div class="photostream" style="background-color:#000;">
-                        <div style="margin-left:1em;">
-                            <a href="https://www.youtube.com/embed/r81jYc9rVuA">
-                             <iframe class="img-responsive" src="https://www.youtube.com/embed/r81jYc9rVuA" frameborder="0" allowfullscreen></iframe>
-                            </a>
-                        </div>
-                      
-                        <div style="margin-left:1em;">
-                            <a href="https://www.youtube.com/embed/qwf6ID_AriY">
-                              <iframe class="img-responsive" src="https://www.youtube.com/embed/qwf6ID_AriY" frameborder="0" allowfullscreen></iframe>
-                            </a>
-                        </div>
-                         <div style="margin-left:1em;">
-                            <a href="https://www.youtube.com/embed/ffFGPlMzXmQ">
-                               <iframe class="img-responsive" src="https://www.youtube.com/embed/ffFGPlMzXmQ" frameborder="0" allowfullscreen></iframe>
-                            </a>
-                        </div>
-                      
-                     
-                    </div>
-
-                </div>
-                <!-- /.col-md-3 -->
+<div class="row">
+	<div class="col-sm-4 col-xs-8">
+		<div id="tile7" class="tile">
+    	 
+        <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://i.ytimg.com/vi/qwf6ID_AriY/maxresdefault.jpg" class="img-responsive"/>
             </div>
-     
-
-				
-
-    </div>
-</section>
-
-        <section class="bar background-image-fixed-2 no-mb color-white text-center">
-            <div class="dark-mask"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="icon icon-lg"><i class="fa fa-music"></i>
-                        </div>
-                        <h3 class="text-uppercase">.</h3>
-                        <p class="lead">.</p>
-                        <p class="text-center">
-                            <a href="https://www.EventBrite.com" class="btn btn-template-transparent-black btn-lg">Buy Tickets Here</a>
-                        </p>
-                    </div>
-
-                </div>
+            <div class="item">
+              <img src="https://pbs.twimg.com/media/C4P_uRsVUAABm5z.jpg" class="img-responsive"/>
             </div>
-        </section>
-
-    <div class="bgimg-1">
-  <div class="caption">
- 
-  </div>
-</div>
-
-<div style="color: #ddd;background-color:#282E34;text-align:center;padding:0px;text-align: justify;">
-  <h3 style="text-align:center;"><link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<div class="container">
-    <div class="fb-profile">
-        <img align="left" class="fb-image-lg img-responsive" src="https://media.giphy.com/media/l0Iy2nOwRODHhi0la/giphy.gif"  style="margin-left:0px !important;min-width:100% !important; max-height:75%;"alt="Profile image example"/>
-        <img align="left" class="fb-image-profile thumbnail" src="" alt="Profile image G" style="display:none;"/>
-        <div class="fb-profile-text">
-            <h1 style="color:white;">Cordero &amp; HH Promotions</h1>
-            
+    
+          </div>
         </div>
-    </div>
-</div> <!-- /container -->  </h3>
+         
+		</div>
+	</div>
+	<div class="col-sm-2 col-xs-4">
+		<div id="tile8" class="tile">
+    	 
+         <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+               <img src="https://pbs.twimg.com/media/BbGNStxCUAEuIPz.jpg" class="img-responsive"/>
+            </div>
+            <div class="item">
+               <img src="https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/17264188_771685199653551_7419453494034642495_n.jpg?oh=e010cb54a67b6bae5018c8f6096edad3&oe=595F546F" class="img-responsive"/>
+            </div>
+            </div>
+         </div>
+         
+		</div>
+	</div>
+	<div class="col-sm-2 col-xs-4">
+		<div id="tile9" class="tile">
+    	 
+          <div class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="https://pbs.twimg.com/media/CkFekTzWsAAiK8m.jpg" class="img-responsive"/>
+            </div>
+            <div class="item">
+              <img src="https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/11223635_928579413847221_8533636662095936659_n.jpg?oh=58366bc11dd1165c80637c273fd9ca6b&oe=59525EF0" class="img-responsive"/>
+            </div>
+          </div>
+        </div>
+         
+		</div>
+	</div>
+	
+	</div>
   
 </div>
-
-<div class="bgimg-2">
-  <div class="caption" id="mish">
-    <span class="border"  style= "background-image: url (https://media.giphy.com/media/l0Iy2nOwRODHhi0la/giphy.gif);background-color:transparent;font-size:16px;color: #;text-shadow: 2px 2px 8px #000000;">tell me stuff</span>
-  </div>
 </div>
-
-<div style="position:relative;">
-  <div style="color:#090;background-color:#282E34;text-align:center;padding:50px 80px;text-align:center; justify;">
-    <p>These are dope shows tho<span style="color:red;"></span>
-</p>
-  </div>
 </div>
-
-<div class="bgimg-3">
-  <div class="caption" id="secondhead">
-    <span class="border" style="background-image: url (https://media.giphy.com/media/l0Iy2nOwRODHhi0la/giphy.gif);background-color:transparent;font-size:18px;color: #ccc;">yoo <a href="#">click here</a><br>$10 off<br>drama</span>
-  </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align:center; justify;">
-    <p>TEST1</p>
-  </div>
-</div>
-
-<div class="bgimg-1">
-  <div class="caption">
-    <span class="border"> Cordero & HH Promotion 2017&copy;</span>
-  </div>
-</div>
-<!---------------- *** TOP info ***------------------------------------------
-_________________________________________________________ -->
-
-
-
-          
-       </header>
-       </div>
-       </body>
-
-      
-
-        <!--    <p>
-                <img class="img-responsive" src="new" alt="">
-            </p>
-        </div> -->
+<!--end media tiles-->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <!-- Footer 1 - Left Social/Right Menu -->
+    
+    
+    
+    <footer>
+     <div class="container">
+       <div class="row text-center">
+       
+                 <div class="col-md-6 col-sm-6 col-xs-12" >
+                  <ul class="list-inline">
+                             
+                               <li>
+                                    <a href="https://www.facebook.com/search/top/?q=cordero%20%26%20hh%20promotions" style="color:#fff;"><i class="fa fa-facebook fa-2x"></i></a>
+                               </li>
+                               
+                            
+                               
+                               <li>
+                                    <a href="https://twitter.com/YOUNGROE59" style="color:#fff;"><i class="fa fa-twitter fa-2x"></i></a> 
+                               </li>
+                              
+                               <li>
+                                    <a href="https://www.instagram.com/youngroe5/" style="color:#fff;"><i class="fa fa-instagram fa-2x"></i></a>
+                               </li>
+                                
+                               <li>
+                                    <a href="https://www.youtube.com/channel/UCkt8oXYP1oiO_L4Wff6Q1dA" style="color:#fff;"><i class="fa fa-youtube fa-2x"></i></a>
+                               </li>
+                               
+                               <li>
+                                    <a href="tel:(630)402-5598"style="color:#fff;"><i class="fa fa-phone fa-2x"></i></a>
+                               </li>
+                                
+                              
+                              
+                     </ul>
+                   </div>
+           
+                 <div class="col-md-6 col-sm-6 col-xs-12">
+                  <ul class="menu list-inline">
+                             
+                         <li>
+                            <a href="#">Upcoming Shows</a>
+                          </li>
+                               
+                          <li>
+                             <a href="#">Tickets</a>
+                          </li>
+                               
+                          <li>
+                            <a href="#">My Artists</a>
+                          </li>
+                               
+                          <li>
+                             <a href="#">Cyphers </a>
+                          </li>
+                               
+                          <li>
+                            <a href="tel:(630)-402-5598">Contact</a>
+                         </li>
+               
+                 </ul>
+               </div>
+           
+           
+           </div> 
+        </div>
+    </footer>
+    
+    
+    <div class="copyright" style="background-color:#000;">
+     <div class="container">
+       
+         <div class="row text-center">
+         	<p style="background-color:#000;">Cordero &amp; <br>HH Promotions <br>Copyright © 2017 All rights reserved</p>
+         </div>
+         
+ 	   </div>
+    </div>
+    
+    <!-- End -->
+   
 
     
-    <!-- /#all -->
-
+    
+    
+     
+     
+	
     <!-- #### JAVASCRIPT FILES ### -->
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>
+<script>
         window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-    <script src="js/front.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/front.js"></script>
 
     
 
     <!-- owl carousel -->
-    <script src="js/owl.carousel.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
+
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
@@ -686,198 +914,30 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
 }
-<!--strtt-->
-$(document).ready(function() {
-  
-  var $scene = $(".scene"),
-      $content = $(".content"),
-      $back = $(".back"),
-      $backBgs = $(".back__bg"),
-      $front = $(".front"),
-      $frontBgs = $(".front__bg"),
-      $menuBlock = $(".menu__block"),
-      $svgPath = $(".menu__block-svgPath"),
-      animating = false,
-      menuActive = false,
-      menuAnimTime = 600,
-      blockAnimTime = 1500,
-      $sliderCont = $(".menu-slider__content"),
-      curSlide = 1,
-      sliderXDiff = 0,
-      curPage = 1,
-      nextPage = 0,
-      numOfPages = $(".front__bg").length,
-      scaleTime = 500,
-      transTime = 500,
-      totalTime = scaleTime + transTime,
-      changeTimeout,
-      timeoutTime = 8000,
-      winW = $(window).width(),
-      winH = $(window).height();
-  
-  // init nav element timeout animation
-  $(".nav__el-1").addClass("active");
-  
-  //default debounce function from David Walsh blog
-  function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
-  
-  function changePages() {
-    $(".back__bg, .front__bg, .nav__el").removeClass("active");
-    $(".nav__el-"+curPage).addClass("active");
-    $back.css("transform", "translate3d(0,"+(curPage-1)*-100+"%,0)");
-    $front.css("transform", "translate3d(0,"+(curPage-1)*100+"%,0)");
-    createTimeout();
-    setTimeout(function() {
-      $(".back__bg-"+curPage+", .front__bg-"+curPage).addClass("active");
-    }, totalTime);
-  };
-  
-  $(document).on("click", ".nav__el:not(.active)", function() {
-    curPage = $(this).attr("data-page");
-    changePages();
-  });
-  
-  // ugly hack for animation reset when you coming back from menu section
-  function resetTimeoutAnimation() {
-    var $activeNavEl = $(".nav__el.active"),
-        $activeParts = $activeNavEl.find(".nav__el-clone, .nav__el")
-    $activeParts.addClass("instant");
-    $activeNavEl.removeClass("active");
-    $activeParts.css("top");
-    $activeParts.removeClass("instant");
-    $activeParts.css("top");
-    $activeNavEl.addClass("active");
-  }
-  
-  /* creates timeOut for change of slides.
-  Call's itself from inside of changePages() function
-  */
-  function createTimeout() {
-    window.clearTimeout(changeTimeout);
-    resetTimeoutAnimation();
-    changeTimeout = setTimeout(function() {
-      if (curPage >= numOfPages) {
-        curPage = 1;
-      } else {
-        curPage++;
-      }
-      changePages();
-    }, timeoutTime);
-  };
-  
-  createTimeout();
-  
-  /* creates path D attribute strings for animation
-  initial d = fullScreen
-  mid d = Q curves with 5% padding
-  final d = centered 90% width/height block
-  */
-  function createD(type) {
-    var types = {"init": ["M0,0",
-                          "Q"+winW/2+",0",
-                          winW+",0",
-                          "Q"+winW+","+winH/2,
-                          winW+","+winH,
-                          "Q"+winW/2+","+winH,
-                          "0,"+winH,
-                          "Q0,"+winH/2,
-                          "0,0"],
-                 "mid": ["M0,0",
-                         "Q"+winW/2+","+winH*0.05,
-                         winW+",0",
-                         "Q"+winW*0.95+","+winH/2,
-                         winW+","+winH,
-                         "Q"+winW/2+","+winH*0.95,
-                         "0,"+winH,
-                         "Q"+winW*0.05+","+winH/2,
-                         "0,0"],
-                 "final": ["M"+winW*0.05+","+winH*0.05,
-                           "Q"+winW/2+","+winH*0.05,
-                           winW*0.95+","+winH*0.05,
-                           "Q"+winW*0.95+","+winH/2,
-                           winW*0.95+","+winH*0.95,
-                           "Q"+winW/2+","+winH*0.95,
-                           winW*0.05+","+winH*0.95,
-                           "Q"+winW*0.05+","+winH/2,
-                           winW*0.05+","+winH*0.05]};
-    return types[type].join(" ");
-  }
-  
-  // animates path d with SnapSVG
-  function animateBlock(reverse) {
-    winW = $(window).width();
-    winH = $(window).height();
-    var initD = createD("init"),
-        midD = createD("mid"),
-        finalD = createD("final");
+
+<!--start tiles-->
+$( document ).ready(function() {
+    $(".tile").height($("#tile1").width());
+    $(".carousel").height($("#tile1").width());
+     $(".item").height($("#tile1").width());
+     
+    $(window).resize(function() {
+    if(this.resizeTO) clearTimeout(this.resizeTO);
+	this.resizeTO = setTimeout(function() {
+		$(this).trigger('resizeEnd');
+	}, 10);
+    });
     
-    if (!reverse) {
-      $svgPath.attr("d", initD);
-      Snap($svgPath[0]).animate({"path": midD}, blockAnimTime/2, mina.elastic, function() {
-        Snap($svgPath[0]).animate({"path": finalD}, blockAnimTime/2, mina.elastic);
-      });
-    } else {
-      Snap($svgPath[0]).animate({"path": midD}, blockAnimTime/2, mina.elastic, function() {
-        Snap($svgPath[0]).animate({"path": initD}, blockAnimTime/2, mina.elastic);
-      });
-    }
-    
-  };
-  
-  // resizes opened menu path d block, because i can't change viewBox with js
-  var resizeSvg = debounce(function() {
-    winW = $(window).width();
-    winH = $(window).height();
-    $svgPath.attr("d", createD("final"));
-  }, 50);
-  
-  // default madness
-  $(document).on("click", ".menu__btn", function() {
-    if (animating) return;
-    animating = true;
-    setTimeout(function() {
-      animating = false;
-    }, blockAnimTime + menuAnimTime);
-    
-    if (!menuActive) {
-      menuActive = true;
-      window.clearTimeout(changeTimeout);
-      $content.addClass("inactive");
-      $scene.addClass("menu-visible");
-      $(".back__bg:not(.active)").addClass("hidden");
-      $(window).on("resize", resizeSvg);
-      setTimeout(function() {
-        $menuBlock.addClass("visible");
-        animateBlock();
-      }, menuAnimTime);
-    } else {
-      menuActive = false;
-      animateBlock(true);
-      setTimeout(function() {
-        $menuBlock.removeClass("visible");
-        createTimeout();
-        $(".back__bg").removeClass("hidden");
-        $content.removeClass("inactive");
-        $scene.removeClass("menu-visible");
-      }, blockAnimTime);
-      $(window).off("resize");
-    }
-  });
-  
+    $(window).bind('resizeEnd', function() {
+    	$(".tile").height($("#tile1").width());
+        $(".carousel").height($("#tile1").width());
+        $(".item").height($("#tile1").width());
+    });
+
 });
+
+
+<!--end tiles-->
 </script>
  
    
