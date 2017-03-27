@@ -4,6 +4,7 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #fff;
   padding-bottom:0px;
+  background-color:#fff !important;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
