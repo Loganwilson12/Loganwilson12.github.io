@@ -4,7 +4,6 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #fff;
   padding-bottom:0px;
-  background-color:#fff !important;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -161,7 +160,7 @@ h1.heading {
   text-decoration: none !important;
 }
 .carbox-read-more {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #D4D4D4;
 }
 .carbox-read-more a {
   text-decoration: none !important;
