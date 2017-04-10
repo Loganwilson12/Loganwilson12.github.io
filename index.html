@@ -321,7 +321,7 @@
 
 
 
-#background {
+#background { 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -352,11 +352,11 @@ background: transparent;
     position: relative;
     /* border-bottom: 0; */
     /* width: 80%; */
-    margin: 0;
-    margin-bottom: 0;
+    margin-left:11%;
+    margin-top: 5%;
     box-sizing: border-box;
 	padding-bottom:0%;
-	width:32%;
+	width:70%;
 
 }
 
@@ -375,7 +375,7 @@ p.narrow{
     height: 2px;
     background: orange;
     position: absolute;
-    width: 55%;
+    width: 80%;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -455,13 +455,22 @@ li.active span.round-tabs.five{
     border: 2px solid #ddd;
     color: #f90;
 }
+span.round-tabs.six{
+    color: #f90;border: 2px solid #f90;
+}
 
+li.active span.round-tabs.six{
+    background: #000 !important;
+    border: 2px solid #ddd;
+    color: #f90;
+}
 .nav-tabs > li.active > a span.round-tabs{
     background: #000;
 }
 .nav-tabs > li {
     padding-left:10%;
-	width: 29%;
+	width: 1%;
+	padding-right:5%;
 }
 /*li.active:before {
     content: " ";
@@ -599,14 +608,105 @@ left: 35%;
                  padding-bottom:5%;
  }
 }
+<!--start social-->
+	  /* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+	size:auto;
+	
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+a {
+ background-color: #000;   
+}
+<!--start social-->
 	</style>
 </head>
 
 <body>
 <div class="row">
 <div class="col-md-12 col-lg-12 col-xl-12">
-<img id="mobile_Logo" style="max-width:32%;max-height:32%;padding-top:3%;padding-left:3.25%;" src="http://i347.photobucket.com/albums/p447/logothepogo1212/dgfinalfinal6_zpss99wvi9s.png"/>
-</div></div>
+<img id="mobile_Logo" style="max-width:32%;max-height:32%;padding-top:3%;margin-left:7%;padding-bottom:1.5%;display:inline;margin-left:5%;" src="img/images/roelogofinal1.png"/><!--http://i347.photobucket.com/albums/p447/logothepogo1212/dgfinalfinal6_zpss99wvi9s.png      img/images/roelogofinal1.png-->
+ <ul class="social-network social-circle" style="display:inline-block;padding-bottom:3%;padding-top:6.3%;;">
+                        <li><a href="tel:(630)402-5598" class="icoRss" title="Phone"><i class="fa fa-phone"></i></a></li>
+                        <li><a href="https://www.facebook.com/search/top/?q=cordero%20%26%20hh%20promotions" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/YOUNGROE59" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCkt8oXYP1oiO_L4Wff6Q1dA" class="icoGoogle" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/youngroe5/" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    </ul>		</div></div>
 <!--start nav-->
 
                
@@ -620,7 +720,7 @@ left: 35%;
                 </div>
             </div>
         </div>
-                 
+            
                                <!--start-->
                                
                                <div class="container" id="pickles">  
@@ -958,7 +1058,7 @@ left: 35%;
                      </span> </a>
                      </li>
 
-                     <!-- <li><a href="#settings" data-toggle="tab" title="Contact us">
+                     <li><a href="#settings" data-toggle="tab" title="Contact us">
                          <span class="round-tabs four">
                               <i class="glyphicon glyphicon-comment"></i>
                          </span> 
@@ -968,7 +1068,12 @@ left: 35%;
                          <span class="round-tabs five">
                               <i class="glyphicon glyphicon-ok"></i>
                          </span> </a>
-                     </li>-->
+                     </li>
+                     <li><a href="#sixerz" data-toggle="tab" title=" six">
+                         <span class="round-tabs six">
+                              <i class="glyphicon glyphicon-fire"></i>
+                         </span> </a>
+                     </li>
                      
                      </ul></div>
 
@@ -1040,6 +1145,18 @@ left: 35%;
   Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables
 </p>
 </div>
+
+ <div class="tab-pane fade" id="sixerz">
+  <div class="text-center">
+    <i class="img-intro icon-checkmark-circle"></i>
+</div>
+<h3 class="head text-center moveup">yooo <span style="color:#f48260;">♥</span>huuhho</h3>
+<p class="narrow text-center">
+  Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables
+</p>
+</div>
+
+
 <div class="clearfix"></div>
 </div>
 
