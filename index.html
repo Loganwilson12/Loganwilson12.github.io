@@ -332,7 +332,7 @@
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url("https://media.giphy.com/media/xTiTnmNURjSAqnxab6/giphy.gif") no-repeat;
+    background: url("https://images.unsplash.com/photo-1447703693928-9cd89c8d3ac5?dpr=1&auto=format&fit=crop&w=1500&h=999&q=80&cs=tinysrgb&crop=&bg=") no-repeat;
     background-size: cover;
 }/*"https://images.unsplash.com/photo-1459749411175-04bf5292ceea?dpr=1&auto=compress,format&fit=crop&w=991&h=661&q=80&cs=tinysrgb&crop=&bg="*/
 .container h1 {
@@ -373,7 +373,7 @@ p.narrow{
 
 .liner{
     height: 2px;
-    background: orange;
+    background: #fff;
     position: absolute;
     width: 80%;
     margin: 0 auto;
@@ -407,62 +407,62 @@ span.round-tabs{
 }
 
 span.round-tabs.one{
-    color: #F90;border: 2px solid #f90;
+    color: #000;border: 2px solid #fff;
 }
 
 li.active span.round-tabs.one{
-    background: #fff !important;
+    background: #000 !important;
     border: 2px solid #ddd;
-    color: #f90;
+    color: #fff;
 }
 
 span.round-tabs.two{
-    color: #f90;border: 2px solid #f90;
+    color: #000;border: 2px solid #fff;
 }
 
 li.active span.round-tabs.two{
     background: #000 !important;
     border: 2px solid #ddd;
-    color: #f90;
+    color: #fff;
 }
 
 span.round-tabs.three{
-    color: #f90;border: 2px solid #f90;
+    color: #000;border: 2px solid #fff;
 }
 
 li.active span.round-tabs.three{
     background: #000 !important;
     border: 2px solid #ddd;
-    color: #f90;
+    color: #fff;
 }
 
 span.round-tabs.four{
-    color: #f90;border: 2px solid #f90;
+    color: #000;border: 2px solid #fff;
 }
 
 li.active span.round-tabs.four{
     background: #000 !important;
     border: 2px solid #ddd;
-    color: #f90;
+    color: #fff;
 }
 
 span.round-tabs.five{
-    color: #f90;border: 2px solid #f90;
+    color: #000;border: 2px solid #fff;
 }
 
 li.active span.round-tabs.five{
     background: #000 !important;
     border: 2px solid #ddd;
-    color: #f90;
+    color: #fff;
 }
 span.round-tabs.six{
-    color: #f90;border: 2px solid #f90;
+    color: #000;border: 2px solid #fff;
 }
 
 li.active span.round-tabs.six{
     background: #000 !important;
     border: 2px solid #ddd;
-    color: #f90;
+    color: #fff;
 }
 .nav-tabs > li.active > a span.round-tabs{
     background: #000;
@@ -693,13 +693,84 @@ a {
  background-color: #000;   
 }
 <!--start social-->
+   <!--start vid recap-->
+	   .video-list-thumbs{}
+.video-list-thumbs > li{
+    margin-bottom:12px;
+}
+.video-list-thumbs > li:last-child{}
+.video-list-thumbs > li > a{
+	display:block;
+	position:relative;
+	background-color: #111;
+	color: #fff;
+	padding: 8px;
+	border-radius:3px
+    transition:all 500ms ease-in-out;
+    border-radius:4px
+}
+.video-list-thumbs > li > a:hover{
+	box-shadow:0 2px 5px rgba(0,0,0,.3);
+	text-decoration:none
+}
+.video-list-thumbs h2{
+	bottom: 0;
+	font-size: 14px;
+	height: 33px;
+	margin: 8px 0 0;
+}
+.video-list-thumbs .glyphicon-play-circle{
+    font-size: 60px;
+    opacity: 0.6;
+    position: absolute;
+    right: 39%;
+    top: 31%;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    transition:all 500ms ease-in-out;
+}
+.video-list-thumbs > li > a:hover .glyphicon-play-circle{
+	color:#fff;
+	opacity:1;
+	text-shadow:0 1px 3px rgba(0,0,0,.8);
+}
+.video-list-thumbs .duration{
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 2px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	left: 12px;
+	line-height: 13px;
+	padding: 2px 3px 1px;
+	position: absolute;
+	top: 12px;
+    transition:all 500ms ease;
+}
+.video-list-thumbs > li > a:hover .duration{
+	background-color:#000;
+}
+@media (min-width:320px) and (max-width: 480px) { 
+	.video-list-thumbs .glyphicon-play-circle{
+    font-size: 35px;
+    right: 36%;
+    top: 27%;
+	}
+	.video-list-thumbs h2{
+		bottom: 0;
+		font-size: 12px;
+		height: 22px;
+		margin: 8px 0 0;
+	}
+}
+	   <!--end vid recap-->
+	   
 	</style>
 </head>
 
 <body>
 <div class="row">
 <div class="col-md-12 col-lg-12 col-xl-12">
-<img id="mobile_Logo" class="img-responsive" style="width:auto;height:auto !important;padding-top:0.1%;margin-left:35%;padding-bottom:0.1%;display:inline;" src="http://i347.photobucket.com/albums/p447/logothepogo1212/roelogofinal1_zps7cpidlfj.png"/><!--http://i347.photobucket.com/albums/p447/logothepogo1212/dgfinalfinal6_zpss99wvi9s.png      img/images/roelogofinal1.png-->
+<img id="mobile_Logo" class="img-responsive" style="color:white;width:auto;height:auto !important;padding-top:0.1%;margin-left:35%;padding-bottom:0.1%;display:inline;" src="http://i347.photobucket.com/albums/p447/logothepogo1212/roelogofinal1_zps7cpidlfj.png"/><!--http://i347.photobucket.com/albums/p447/logothepogo1212/dgfinalfinal6_zpss99wvi9s.png      img/images/roelogofinal1.png-->
  <ul class="social-network social-circle" style="display:inline-block;padding-bottom:3%;padding-top:6.3%;padding-left:0;">
                         <li><a href="tel:(630)402-5598" class="icoRss" title="Phone"><i class="fa fa-phone"></i></a></li>
                         <li><a href="https://www.facebook.com/search/top/?q=cordero%20%26%20hh%20promotions" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
@@ -978,7 +1049,7 @@ a {
   </g>
 </svg>
                                
-                               <!--end--> <div class="row"><div class="col-md-12" id="blackbox" style="display:block;background-color:url(https://images.unsplash.com/photo-1487235829740-e0ac5a286e1c?dpr=1&auto=format&fit=crop&w=1500&h=1003&q=80&cs=tinysrgb&crop=&bg=) !important; min-width:115%;min-height:20%;margin-left:-3%;overflow:hidden;> </div></div>
+                               <!--end--> <div class="row"><div class="col-md-12" id="blackbox" style="display:block;background-color:url(https://images.unsplash.com/photo-1487235829740-e0ac5a286e1c?dpr=1&auto=format&fit=crop&w=1500&h=1003&q=80&cs=tinysrgb&crop=&bg=) !important; min-width:115%;min-height:20%;margin-left:-3%;overflow:hidden;"> </div></div>
                                
    <div class="row">
    <div class="col-md-12">
@@ -1035,7 +1106,7 @@ a {
         <div class="container">
             <div class="row">
                 <div class="board">
-                    <!-- -->
+                
                     <div class="board-inner">
                     <ul class="nav nav-tabs" id="myTab">
                     <div class="liner"></div>
@@ -1077,11 +1148,86 @@ a {
                      
                      </ul></div>
 
+
+<!--yusss-->
+   <div class="row" style="text-align:left;width:800px;margin-left:14.5%;">
+      <div class="col-md-12" style="padding:0;">
+               <ul style="font-size:0.75em;" class="" id=""> 
+               <li style="text-align:left;display:inline;;font-size:0.75em;">Upcoming Shows</li>
+               <li style="text-align:left;display:inline;font-size:0.75em;margin-left:6.5%;">Music Videos</li>
+               <li style="text-align:left;display:inline;font-size:0.75em;margin-left:9.5%;">Tickets</li>
+               <li style="text-align:left;display:inline;font-size:0.75em;margin-left:10.5%;">My Artists</li>
+               <li style="text-align:left;display:inline;font-size:0.75em;margin-left:10.5%;">Cyphers</li>
+               <li style="text-align:left;display:inline;font-size:0.75em;margin-left:10%;">Contact us</li>
+               
+               </ul>
+      </div>
+   </div>
+               <p style="margin:auto !important;">
+<h2 align="center" style="padding-bottom:1%;margin-top:2.3%;">Click The Circular Tabs To Navigate</h2></p>
+<p style="margin:auto !important;">
+<h3 align="center" style="padding-bottom:0;">Video Recaps</h3></p>
+<!--end p yuss-->
+<!--end video recap paragraph-->
+
+
                      <div class="tab-content">
                       <div class="tab-pane fade in active" id="home">
-                < <p class="narrow text-center">
-                              Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables
-                          </p>
+                  
+
+               <!--start video recap paragraph-->
+            
+<!--start video recap-->
+<div class="container">
+
+
+
+<ul class="list-unstyled video-list-thumbs row">
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=ffFGPlMzXmQ" title="Gherbo">
+			<img src="https://j.gifs.com/wjqDqX.gif" alt="Gherbo" class="img-responsive" height="130px" />
+			<h2>LIL HERB - Hosted by Cordero &amp; HH Promotions</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">03:50</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=qwf6ID_AriY" title="Lil-Bibby">
+			<img src="https://j.gifs.com/JZ9gny.gif" alt="lilbibby" class="img-responsive" height="130px" />
+			<h2>LIL BIBBY - Hosted by Cordero &amp; HH Promotions</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">05:02</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=r81jYc9rVuA" title="King Louie">
+			<img src="https://j.gifs.com/r0lxr2.gif" alt="kingLou" class="img-responsive" height="130px" />
+			<h2>KING LOUIE - Hosted by Cordero &amp; HH Promotions</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">03:39</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-md-4 col-sm-4 col-xs-6" style="display:none;">
+		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+			<img src="https://j.gifs.com/r0lxr2.gif" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">03:15</span>
+		</a>
+	</li>
+    <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6" style="display:none;">
+		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
+			<span class="glyphicon glyphicon-play-circle"></span>
+			<span class="duration">03:15</span>
+		</a>
+	</li>
+</ul>
+
+</div>
+<!--end video recap-->
+
                       </div>
                       <div class="tab-pane fade" id="profile">
                           <h3 class="head text-center moveup">yoo<sup>™</sup> Profile</h3>
@@ -1242,13 +1388,14 @@ $(function(){
         directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
         directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
         density: 10000, // How many particles will be generated: one particle every n pixels
-        dotColor: 'orange',
-        lineColor: '#ff9',
+        dotColor: 'white',
+        lineColor: '#999',
         particleRadius: 7, // Dot size
         lineWidth: 1,
         curvedLines: true,
         proximity: 132, // How close two dots need to be before they join
         parallax: false,
+     
     });
 
 });
