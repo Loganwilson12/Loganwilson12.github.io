@@ -67,6 +67,8 @@
 .panel-body {
     padding-top: 30px;
     background-color: rgba(2555,255,255,.3);
+	
+	
 }
 #particles {
     width: 100%;
@@ -79,6 +81,20 @@
     position: absolute;
     z-index: -2;
 }
+#listof {width:100%;
+		 color:#F90;
+		 display:inline;
+		 font-size:12px;
+		 margin-left:-3.7%;
+		 }
+		 
+    .ds {width:95%;
+		 color:#F90;
+		 display:inline;
+		 font-size:12px;
+		 padding:3.7%;
+		}
+	
 	@media (min-width: 768px) {
 		
 	
@@ -339,6 +355,7 @@ left: 35%;
     box-sizing: border-box;
 	padding-bottom:3%;
 	padding-top:10%;
+
 }
 #second_Tagline {padding-top:40%;
                  padding-bottom:5%;
@@ -483,6 +500,7 @@ a {
 
 #myTab {padding:3% !important;
 		width:95%;
+		
 		}
 
 @media (min-width:320px) and (max-width: 480px) { 
@@ -496,6 +514,7 @@ a {
 		font-size: 12px;
 		height: 22px;
 		margin: 8px 0 0;
+		
 	}
 	#mobileCarousel {width:320px;margin-left:-50px;}
 	#mobileCarousel2 {width:320px;margin-left:-50px;}
@@ -858,53 +877,41 @@ a {
                     <ul class="nav nav-tabs" id="myTab">
                     <div class="liner"></div>
                      
-                     <a href="#home" data-toggle="tab" title="Welcome">
+                     <a href="#home" data-toggle="tab" title="Welcome" onMouseOver="chgBtnz('none')">
                       <span class="round-tabs one">
-                              <i class="glyphicon glyphicon-ok-sign"></i>
+                             Shows
                       </span> 
                   </a></li>
-                  <li><a href="#profile" data-toggle="tab" title="Profile">
+                  <li><a href="#profile" data-toggle="tab" title="Profile" onMouseOver="chgBtnz('none')">
                      <span class="round-tabs two">
-                         <i class="glyphicon glyphicon-sunglasses"></i>
+                      Videos  <!--  <i class="glyphicon glyphicon-sunglasses"></i>-->
                      </span> 
            </a>
                  </li>
                 <li><a href="#messages" data-toggle="tab" title="Work For Us">
                      <span class="round-tabs three">
-                          <i class="glyphicon glyphicon-briefcase"></i>
+                     Tickets  <!--    <i class="glyphicon glyphicon-briefcase"></i>-->
                      </span> </a>
                      </li>
                      <li><a href="#settings" data-toggle="tab" title="Contact us">
                          <span class="round-tabs four">
-                              <i class="glyphicon glyphicon-comment"></i>
+                         Artists  <!--  <i class="glyphicon glyphicon-comment"></i>-->
                          </span> 
                      </a></li>
                      <li><a href="#doner" data-toggle="tab" title=" Our Success Stories">
                          <span class="round-tabs five">
-                              <i class="glyphicon glyphicon-ok"></i>
+                              Cyphers<!-- <i class="glyphicon glyphicon-ok"></i>-->
                          </span> </a>
                      </li>
                      <li><a href="#sixerz" data-toggle="tab" title=" six">
                          <span class="round-tabs six">
-                              <i class="glyphicon glyphicon-fire"></i>
+                             Contact<!--  <i class="glyphicon glyphicon-fire"></i>-->
                          </span> </a>
                      </li>
                      
                      </ul></div>
 <!--yusss-->
-   <div id="mobileDscribe" class="row">
-      <div id="makeHappy" class="col-md-12" style="padding:0;">
-              <ul class="" id="listof"> 
-               <li id="Dscrib">Upcoming Shows</li>
-               <li id="Dscrib2">Music Videos</li>
-               <li id="Dscrib3">Tickets</li>
-               <li id="Dscrib4">My Artists</li>
-               <li id="Dscrib5">Cyphers</li>
-               <li id="Dscrib6">Contact &nbsp;us</li>
-               
-               </ul>
-      </div>
-   </div>
+  
                <p id="instruct3" style="margin:auto !important;">
 <h2 id="instruct1" align="center" style="padding-bottom:1%;margin-top:1%;">Click The Circular Tabs To Navigate</h2></p>
 <p style="margin:auto !important;">
@@ -1212,5 +1219,11 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
 }
+</script>
+<script>
+
+function chgBtnz (d){document.getElementsByClassName('round-tabs').style.display=d;}
+
+
 </script>
 </body></html>
