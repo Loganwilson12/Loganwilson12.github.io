@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel="stylesheet" type="text/css">
-
+<link href="https://fonts.googleapis.com/css?family=Aldrich|Amatic+SC|Archivo+Narrow|Hind+Vadodara|McLaren|Merienda+One|Montserrat+Subrayada|Play|Pridi|Questrial|Rammetto+One|Rubik+Mono+One|Skranji|Suez+One|Tauri|Viga" rel="stylesheet">
     <!-- Bootstrap and Font Awesome css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -48,10 +48,34 @@
                 body {
                 background-color:#fff; /*#6F6349*/;
                 text-align: center;
-              
-                font-size: 16px; 
+                font-size: 62.5%; 
                 color: white;
-            }
+				font-family: 'Montserrat Subrayada', sans-serif;
+
+
+
+				
+/* font-family: 'Play', sans-serif;
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Hind Vadodara', sans-serif;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Viga', sans-serif;
+font-family: 'Tauri', sans-serif;
+font-family: 'Rammetto One', cursive;
+font-family: 'Merienda One', cursive;
+font-family: 'Pridi', serif;
+font-family: 'Skranji', cursive;
+font-family: 'Suez One', serif;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'McLaren', cursive; */
+	font-style: normal;
+	font-variant: normal;
+	
+ }
+ 
                     #mobile_Logo {margin-left:23%;
                           
                           
@@ -170,7 +194,7 @@
                 line-height: 47px;
                 display: inline-block;
                 border-radius: 100px;
-                background: white;
+                background: transparent;
                 z-index: 2;
                 position: absolute;
                 left: 0;
@@ -180,54 +204,62 @@
             }
             span.round-tabs.one{
                 color: #000;border: 2px solid #fff;
+				 background: transparent;
             }
             li.active span.round-tabs.one{
-                background: #000 !important;
+                background: transparent !important;
                 border: 2px solid #ddd;
-                color: #fff;
+                color: #000;
             }
             span.round-tabs.two{
-                color: #000;border: 2px solid #fff;
+				 background: transparent;
+                color: #fff;border: 2px solid #fff;
             }
             li.active span.round-tabs.two{
-                background: #000 !important;
+				
+                 background: transparent !important;
                 border: 2px solid #ddd;
-                color: #fff;
+                color: #000;
+				z-index:99999;
             }
             span.round-tabs.three{
-                color: #000;border: 2px solid #fff;
+				 background: transparent;
+                color: #fff;border: 2px solid #fff;
             }
             li.active span.round-tabs.three{
-                background: #000 !important;
+                background: #fff !important;
                 border: 2px solid #ddd;
                 color: #fff;
+				z-index:999999;
             }
             span.round-tabs.four{
-                color: #000;border: 2px solid #fff;
+                color: #fff;border: 2px solid #fff;
             }
             li.active span.round-tabs.four{
                 background: #000 !important;
                 border: 2px solid #ddd;
                 color: #fff;
+				opacity:0.3;
+				
             }
             span.round-tabs.five{
-                color: #000;border: 2px solid #fff;
+                color: #fff;border: 2px solid #fff;
             }
             li.active span.round-tabs.five{
-                background: #000 !important;
+                background: #fff !important;
                 border: 2px solid #ddd;
                 color: #fff;
             }
             span.round-tabs.six{
-                color: #000;border: 2px solid #fff;
+                color: #fff;border: 2px solid #fff;
             }
             li.active span.round-tabs.six{
-                background: #000 !important;
+                background: #fff !important;
                 border: 2px solid #ddd;
                 color: #fff;
             }
             .nav-tabs > li.active > a span.round-tabs{
-                background: #000;
+                background:transparent;
             }
             .nav-tabs > li {
                 padding-left:10%;
@@ -441,7 +473,7 @@
 						transition: all 0.8s;
 					}
 					a {
-					 background-color: #000;   
+					 background:transparent;   
 					}
 					<!--start social-->
 					   <!--start vid recap-->
@@ -543,10 +575,16 @@
 		height:40px;
 		text-shadow: #0f0, 1px 1px 2px 3px;}
 				}
-				#youTubevid {margin-top:5%;}
+	
+	
+	#youTubevid {margin-top:5%;}
 	    .round-tabs:hover {width:100px;
 		height:100px;
 		text-shadow: #0f0, 1px 1px 2px 3px;}
+		
+		round-tabs one:hover {margin-top:50px;}
+		.tab-content {max-height:400px !important;overflow:scroll;}
+		.vidHeadline:hover{margin-left:inherit;width:50%; opacity:0.85;}
 		
 	   <!--end vid recap-->
 	   
@@ -888,7 +926,7 @@
                     <div class="liner"></div>
                      
                      <a href="#home" data-toggle="tab" title="Upcoming Shows">
-                      <span class="round-tabs one" onDblClick="hovertabw('#cc3')">
+                      <span idclass="round-tabs one" onDblClick="hovertabw('#cc3')">
                          Shows
                       </span> 
                   </a></li>
@@ -913,12 +951,12 @@
                               Cyphers<!-- <i class="glyphicon glyphicon-ok"></i>-->
                          </span> </a>
                      </li>
-                     <li><a href="#sixerz" data-toggle="tab" title="Contact  Us">
+                     <li><a href="#sixerz" data-toggle="tab"  title="Contact  Us">
                          <span class="round-tabs six">
                              Contact<!--  <i class="glyphicon glyphicon-fire"></i>-->
                          </span> </a>
                      </li>
-                     
+                      
                      </ul></div>
 <!--yusss-->
   
@@ -928,21 +966,63 @@
 </p>
 <!--end p yuss-->
 <!--end video recap paragraph-->
-                     <div class="tab-content">
-                      <div class="tab-pane fade in active" id="home">
+            <div class="tab-content">
+            <div class="tab-pane fade in active" id="home">
                       <!--=========TAB ONE=========== -->
-                   <div class="picsArtist" id="pic1Artist">
-          <div id='showsContainer' class="container">
-               <div id='showsRow' class="row">
+            <div class="picsArtist" id="pic1Artist">
+            <div id='showsContainer' class="container">
+            <div id='showsRow' class="row">
             <div id='showsOne' class="col-lg-4">
             <h1 style="text-shadow:1px 2px #0f6;">LOGIC</h1>
             <h3> Example Date 23rd </h3>
             <img style="width:50%; height:50%; margin:5px 4px 5px 4px;" class='img-responsive center-block' id='showsLogic'  src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6453_P3MmjHqE_jvRiZk-iCWatqAyBze8bMELpum1DXccFDBIew"/>
                </div>
+               <!-- ==== Wall for 1 and 1 for Wall ==== -->
+               
+<div class="container">
+  <ul class="list-group" style="color:#000; font-size:2.7em;">
+    <li class="list-group-item" style="background-image:url('https://media3.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif')"><!-- === -webkit-linear-gradient(top, #0F0,#000); -->
+      <div class="row toggle" id="dropdown-detail-1" data-toggle="detail-1" style="opacity:0.9;">
+        <div class="col-lg-6" id='findOut' style="color:#fff !important;font-size:1.4em;">
+        VIDEOS
+        </div>
+        <div class="col-lg-2"><i class="fa fa-chevron-down pull-right"></i></div>
+        </div>
+        <div id="detail-1">
+      <hr id='goo'> 
+      <!--==== wall for hr===-->
+           
+            <a class='newhouse' href="https://www.youtube.com/embed/61BxvbiRMTw" title="Artist: CityBoi">
+     <img src="" alt="" class="img-responsive" height="30px" />
+     <p class="vidHeadline"> <iframe width="800em" height="300em" src="https://www.youtube.com/embed/61BxvbiRMTw" frameborder="0" allowfullscreen></iframe></p>
+           </a> 
+<a class='newhouse' href="https://www.youtube.com/embed/Qanzz8_KqUg" title="Artist: Boonie-G">
+     <img src="" alt="" class="img-responsive" height="30px" />
+     <p class="vidHeadline"> <iframe width="800em" height="300em" src="https://www.youtube.com/embed/Qanzz8_KqUg" frameborder="0" allowfullscreen></iframe></p>
+</a> 
+           <a class='newhouse' href="https://www.youtube.com/embed/aRLjskgL84A" title="Artist: Young Roe">
+     <img src="" alt="" class="img-responsive" height="30px" />
+     <p class="vidHeadline"> <iframe width="800em" height="300em" src="https://www.youtube.com/embed/aRLjskgL84A" frameborder="0" allowfullscreen></iframe></p>
+           </a> 
+           
+           
+      <!--==== wall for hr===-->   
+      </hr>
+      
+	
+                    <!--=======START ITEM 2=======-->
+            <li class="list-group-item" style="text-shadow: 0.05em 0.05em #0F0;">
+            <div class="row toggle" id="dropdown-detail-2" data-toggle="detail-2">
+                    
+           
+          </div>
+	   </div>
+               
+               <!-- ==== Wall for 1 and 1 for Wall ==== -->
                </div>
                </div>
                </div>
-               <!--Upcoming Shows-->
+               <!--Upcoming Shows end-->
                </div>
                       
                       <div class="tab-pane fade" id="profile">
@@ -1006,7 +1086,7 @@
   
    <!--start video recap-->
           <div class="container">
-<h3 id="instruct2" align="center" style="color:#fff;text-shadow: 3px 3px 0px rgba(0,0,0,0.2);padding-bottom:0;">Show Recaps</h3>
+<h3 id="instruct2" align="center" style="color:#fff;text-shadow: 1px 1px 0px #999;padding-bottom:0;">Show Recaps</h3>
           
           <ul style="margin-left:22.5%;margin-top:1%;" class="list-unstyled video-list-thumbs row" id="youTubevid">
           
@@ -1036,7 +1116,7 @@
             </a>
         	</li>
        	    <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6" style="display:none;">
-            <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+            <a id='newhouse' href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
 			<img src="https://j.gifs.com/r0lxr2.gif" alt="Barca" class="img-responsive" height="130px" />
 		    <h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
 			 <span class="glyphicon glyphicon-play-circle"></span>
@@ -1229,6 +1309,15 @@ function carousel() {
 
 function chgBtnz (d){document.getElementsByClassName('round-tabs').style.display=d;}
 
-
+</script>
+<script>
+$(document).ready(function() {
+    $('[id^=detail-]').hide();
+    $('.toggle').click(function() {
+        $input = $( this );
+        $target = $('#'+$input.attr('data-toggle'));
+        $target.slideToggle();
+    });
+});
 </script>
 </body></html>
