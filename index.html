@@ -540,7 +540,8 @@
 					#listoffix {width:100%;}
 				}
 				#youTubevid {margin-top:5%;}
-	    
+	    .round-tabs:hover{width:100px;
+		height:100px;}
 	   <!--end vid recap-->
 	   
 	</style>
@@ -880,9 +881,9 @@
                     <ul class="nav nav-tabs" id="myTab">
                     <div class="liner"></div>
                      
-                     <a href="#home" data-toggle="tab" title="Upcoming Shows" onMouseOver="chgBtnz('none')">
-                      <span class="round-tabs one">
-                             Shows
+                     <a href="#home" data-toggle="tab" title="Upcoming Shows">
+                      <span class="round-tabs one" onDblClick="hovertabw('#cc3')">
+                         Shows
                       </span> 
                   </a></li>
                   <li><a href="#profile" data-toggle="tab" title="Music Videos" onMouseOver="chgBtnz('none')">
@@ -1052,10 +1053,8 @@
  <script src="js/front.js"></script>
   <script>
  
-  function moveyourTabs (m){document.getElementById('myTab').style.marginLeft=(m);} 
+  function hoverTabw (m){document.getElementClassName('round-tabs').style.color=m;} 
   ;
-
-  moveyoutTabs ('-2%');
    
   </script>
   <script>
