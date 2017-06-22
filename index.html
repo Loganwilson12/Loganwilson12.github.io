@@ -10,6 +10,8 @@
     <!-- Bootstrap and Font Awesome css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="menuResp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js">
 
     <!-- Favicon and apple touch icons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -23,45 +25,25 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon.ico">
  
    
-    <link rel="stylesheet" type="text/css" href="#.css" />
+    <link rel="stylesheet" type="text/css" href="menuResp.css" />
 <style>
 @font-face {
     font-family: logieDistrict;
     src: url(DistTh__.otf);
-}
+} 
 @font-face {
     font-family: logieFont;
-    src: url(Gilroy-ExtraBold.otf);
+    src: url(Gilroy-ExtraBold.otf) ;
 }
 
 html, body {
+	background-color:#000;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  padding: 0;
-  margin: 0;
-}
-.nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background: #ccc;
-}
-.nav li {
-  list-style: none;
-  display: inline-block;
-}
-.nav .link {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 11px;
-  font-family: Sans-serif;
-  color: #333;
-  margin: 0 10px;
-}
-#block1 {color: #fff; height:100%;width: 100%;padding-bottom:110%;display:block;background-image: url("https://j.gifs.com/g5E8KZ.gif");
+  padding:0;
+  margin: 0;}
+  #block1 {color: #fff; height:100%;width: 100%;padding-bottom:110%;display:block;background-image: url("https://j.gifs.com/g5E8KZ.gif");
   background-position: center center; 
   background-repeat: none;
   background-size: cover !important;
@@ -69,11 +51,12 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;}
-#block2 {color: #fff; height:20%;width: 100%; background-color: #54DEFD;padding-bottom:100%;display:block;}
+  
+  #block2 {color: #fff; height:20%;width: 100%; background-color: #54DEFD;padding-bottom:100%;display:block;}
 #block3 {color: #fff; height:20%;width: 100%; background-color: #cee;padding-bottom:100%;display:block;}
 #block4 {color: #fff; height:20%;width: 100%; background-color: #00BD9D;padding-bottom:100%;display:block;}
 #block5 {color: #fff; height:20%;width: 100%; background-color: #8BD7D2;padding-bottom:100%;display:block;}
-#picdog {width:20.4em;margin:auto;padding:32px 7px 5px 7px;}
+#picdog {width:20.4em;margin:auto;padding:52px 7px 5px 7px;}
 
 
  /*start social tabs */
@@ -269,21 +252,48 @@ text-align:left;}
                         transition: all 0.6s;}
 #okl:hover {color:#020D1f !important;}
 .intime {display:inline-block; float:left;padding:0 7px 0 7px;}
+  
 </style>
 </head>
 <body>
-<nav class="nav">
-  <ul>
-    <li><a href="#block1" class="link">Home </a></li>
-    <li><a href="#block2" class="link">Block 2</a></li>
-    <li><a href="#block3" class="link">Block 3</a></li>
-    <li><a href="#block4" class="link">Block 4</a></li>
+<input class='input' type="checkbox" id="navcheck" role="button" title="menu">
+<label for="navcheck" aria-hidden="true" title="menu">
+	<span class="burger">
+		<span class="bar">
+			<span class="visuallyhidden">Menu</span>
+		</span>
+	</span>
+</label>
+<nav id="menu">
+	 <li><a href="#block1" class="link">Home </a></li>
+    <li><a href="#block2" class="link">Find Tickets Now</a></li>
+    <li><a href="#block3" class="link">Show Recaps</a></li>
+    <li><a href="#block4" class="link">My Artists</a></li>
     <li><a href="#block5" class="link">Block 5</a></li>
-  </ul>
 </nav>
-<!-- slides -->
 <!-- slide1 -->
   <div class="container">
+  <div class="row">
+  <div class="col-lg-12">
+    <div class="blocks  nadaBlocka" id="block1" onClick="baoBao();">
+    <input class='input' type="checkbox" id="navcheck" role="button" title="menu">
+<label for="navcheck" aria-hidden="true" title="menu">
+	<span class="burger">
+		<span class="bar">
+			<span class="visuallyhidden">Menu</span>
+		</span>
+	</span>
+</label>
+<nav id="menu">
+	<a href="#">Lorem.</a>
+	<a href="#">Nesciunt!</a>
+	<a href="#">Magnam.</a>
+	<a href="#">Ipsum.</a>
+	<a href="#">Voluptatem.</a>
+	<a href="#">Quibusdam.</a>
+</nav>
+
+	  <div class="container">
   <div class="row">
   <div class="col-lg-12">
     <div class="blocks  nadaBlocka" id="block1" onClick="baoBao();">
@@ -299,7 +309,7 @@ text-align:left;}
             <div id='hur'>__</div>
             <div class="properBtn" style="font-family: logieFont;"  href="#"> <span id="okl">LEARN MORE<!--function blastOff--></div>
            
-           <p id='directBottom' style="font-family: logieDistrict;"> SCROLL DOWN TO DISCOVER </p>
+           <p id='directBottom' style="font-family: logieDistrict;"> Navigate Menu To Discover </p>
            
            
          
@@ -313,102 +323,20 @@ text-align:left;}
                         <li><a href="https://www.instagram.com/youngroe5/" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                     </ul>
   </div>
+  
+  
+  
+  
+  
+  
     </div>     
   </div>
   </div>
-  <!-- /slide1 -->
-    <div class="container">
-  <div class="row">
-  <div class="col-lg-12">
-    <div class="blocks wakaBlocka nadaBlocka" id="block2">
-    <!-- -->
     
-     <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center" style="margin-left:20.5%; width:45%; margin-top:0; min-width:45%;">
-    <img id="mobileCarousel" src="https://j.gifs.com/mwjG03.gif"/>
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 id="one" style="display:none;">___</h3>
-      <p id="e" style="display:none;"></p>    
-    </div>
-    </div>
-  <div class="mySlides w3-display-container w3-center" style="margin-left:20.5%; width:45%; margin-top:0; min-width:45%;padding:0;">
-    <img id="mobileCarousel2" src="https://j.gifs.com/xGx8yz.gif">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 id="two" style="display:none;"></h3>
-      <p id="e" style="display:none;"></p>    
-    </div>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center" style="margin-left:20.5%; width:45%; margin-top:0; min-width:45%;padding:0;">
-    <img id="mobileCarousel3" src="https://j.gifs.com/X6lqP8.gif">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 id="tre" style="display:none;"></h3>
-      <p id="e" style="display:none;"></p>    
-    </div>
-    </div>
-<div class="mySlides w3-display-container w3-center" style="margin-left:20.5%; width:45%; margin-top:0; min-width:45%;padding:0;">
-    <img id="mobileCarousel4" src="https://j.gifs.com/g5E8KZ.gif">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 id="four" style="display:none;"></h3>
-      <p id="e" style="display:none;"></p>    
-    </div> 
-    </div>
- <div class="mySlides w3-display-container w3-center"  style="margin-left:20.5%; width:45%; margin-top:0; min-width:45%;padding:0;">
-    <img id="mobileCarousel5" src="img/images/roe1.gif">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 id="five" style="display:none;"></h3>
-      <p id="e" style="display:none;"></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center" style="margin-left:20.5%; width:45%; margin-top:0; min-width:45%;padding:0;">
-    <img id="mobileCarousel6" src="img/images/roe1.gif" 
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3 id="six" style="display:none;">___</h3>
-      <p id="f" style="display:none;"></p>    
-    </div>
-		</div>
-  <!--main carousel end-->
-    <!-- -->
-    </div>
-     </div>     
-  </div>
-  </div>
-    <div class="container">
-  <div class="row">
-  <div class="col-lg-12">
-    <div class="blocks wakaBlocka nadaBlocka" id="block3">c</div>
-     </div>     
-  </div>
-  </div>
-    <div class="container">
-  <div class="row">
-  <div class="col-lg-12">
-    <div class="blocks wakaBlocka nadaBlocka" id="block4">d</div>
-     </div>     
-  </div>
-  </div>
-    <div class="container">
-  <div class="row">
-  <div class="col-lg-12">
-    <div class="blocks wakaBlocka nadaBlocka" id="block5">e</div>
-  </div>     
-  </div>
-  </div>
+
+
+</div>
+</div>
+</div>
+</div>
 </body>
-<script> 
- function baoBao (){document.getElementsByClassName('blocks').style.display='none'};</script>
- <script> var myIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
-</script>
-</html>
