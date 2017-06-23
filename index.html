@@ -205,30 +205,11 @@ height:950px;
   margin: 0 10px;
   opacity:1;
 }
+	.menuHider {display:block;}
 	
-	#navi {margin-top:-17% !important;}
 }
+.menuHider {display:none;}
 
-
-
-#navi {color:#fff;
-	margin-top: -22px;
-	border-bottom: 5px solid #fff;
-	border-left:6px solid #222;
-
-font-size:0.8em; 
-font-family: logieFont;
-text-shadow:0.01em 0.01em #fff;}
-
-#texty {font-size: 2.3em;
-text-align: center;
-color: #fff;
-display:block;
-margin-left: -5% !important;
-margin-top: -7px !important;
-
-
-}
 #new { text-align: center;
 font-size: 1.5em;
 color: #fff; 
@@ -315,26 +296,24 @@ font-family:logieDistrict;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  letter-spacing:3px;
+  letter-spacing:2px;
   font-family: Sans-serif;
-  color: #000;
+  color:#000 ;
   margin: 0 10px;
-  opacity:0.55;
+  opacity:1;
 }
 .nav .link:hover {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  letter-spacing:3px;
+  letter-spacing:2px;
   font-family: Sans-serif;
-  color: #000;
+  color: #FD334f;
   margin: 0 10px;
   opacity:1;
 }
 	
-	@charset "UTF-8";
-/* CSS Document */
-
+	
 
 input {
   position: fixed;
@@ -473,7 +452,7 @@ nav a:nth-child(6) {
   transition-delay: 0s, 350ms;
 }
 nav a:hover, nav a:focus {
-  color: black;
+  color: #FD554f;
 }
 
 main {
@@ -579,8 +558,8 @@ h1 {
 <nav id="menu">
 
 	 <a href="#block1" class="link">Home </a>
-    <a href="#block2" class="link">Find Tickets Now</a>
-    <a href="#block3" class="link">Show Recaps</a>
+    <a href="https://www.eventbrite.com" class="link">Find Tickets Now</a>
+    <a href="" class="link">Show Recaps</a>
     <a href="#block4" class="link">My Artists</a>
     <a href="#block5" class="link">Block 5</a>
 </nav>
@@ -588,22 +567,21 @@ h1 {
   <div class="container">
   <div class="row">
   <div class="col-lg-12">
-    <div class="blocks  nadaBlocka" id="block1" onClick="baoBao();">
-    <input class='input' type="checkbox" id="navcheck" role="button" title="menu">
+    <div class="blocks  menuHider" id="block1" onClick="baoBao();">
+    <input class='input menuHider' type="checkbox" id="navcheck" role="button" title="menu">
 <label for="navcheck" aria-hidden="true" title="menu">
-	<span class="burger">
-		<span class="bar">
-			<span class="visuallyhidden">Menu</span>
+	<span class="burger menuHider">
+		<span class="bar menuHider">
+			<span class="visuallyhidden menuHider">Menu</span>
 		</span>
 	</span>
 </label>
-<nav id="menu">
-	<a href="#">Lorem.</a>
-	<a href="#">Nesciunt!</a>
-	<a href="#">Magnam.</a>
-	<a href="#">Ipsum.</a>
-	<a href="#">Voluptatem.</a>
-	<a href="#">Quibusdam.</a>
+<nav id="menu" class="menuHider">
+	<a href="#">Home</a>
+	<a href="https://www.eventbrite.com">Find Tickets Now</a>
+	<a href="recaps.html">Show Recaps</a>
+	<a href="artist.html">My Artists</a>
+	<a href="#">Block 5</a>
 </nav>
 
 	  <div class="container" >
