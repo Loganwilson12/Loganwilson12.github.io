@@ -1,62 +1,194 @@
-<!DOCTYPE html><html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="robots" content="">
-    <meta name="googlebot" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cordero H&H Promotions</title>
-    <meta name="keywords" content="">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel="stylesheet" type="text/css">
-    <!-- Bootstrap and Font Awesome css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	
-    
+<meta charset="UTF-8">
 
-    <!-- Favicon and apple touch icons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon.ico">
- 
-   
-    <link rel="stylesheet" type="text/css" href="menuResp.css" />
+   <!-- Bootstrap and Font Awesome css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Bungee|Arimo" rel="stylesheet">
+<title>Cordero H&H Promotions</title>
+
 <style>
 @font-face {
-    font-family: logieDistrict;
-    src: url(DistTh__.otf);
-} 
-@font-face {
-    font-family: logieFont;
-    src: url(Gilroy-ExtraBold.otf) ;
+    font-family: "logieFont";
+    src: url(Gilroy-ExtraBold.otf);
 }
 
-html, body {border:3px solid #111;
-	background-color:#000;
+@font-face {
+    font-family: 'logieDistrict';
+    src: url(DistTh__.otf);
+  }
+
+
+
+/*########1st*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: scroll !important;
+  font-family: "Arimo", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bungee", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 17px;
+}
+
+a {
+  color: #EA1733;
+  text-decoration: none;
+}
+a:hover {
+  color: #15e8cc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body > header {
+  position: relative;
+  z-index: 99;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  padding:0;
-  margin: 0;}
-  #block1 { color: #fff; height:100%;width: 100%;padding-bottom:110%;display:block;background-image: url("https://j.gifs.com/g5E8KZ.gif");
-  background-position: center center; 
-  background-repeat: none;
-  background-size: cover !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;}
-  
-  #block2 {color: #fff; height:20%;width: 100%; background-color: #54DEFD;padding-bottom:100%;display:block;}
-#block3 {color: #fff; height:20%;width: 100%; background-color: #cee;padding-bottom:100%;display:block;}
-#block4 {color: #fff; height:20%;width: 100%; background-color: #00BD9D;padding-bottom:100%;display:block;}
-#block5 {color: #fff; height:20%;width: 100%; background-color: #8BD7D2;padding-bottom:100%;display:block;}
-#logoPic {width:30em;margin:auto;padding:44px 7px 5px 7px;}
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: rgba(34, 34, 34, 0.95);
+}
+
+header > nav[role="main"] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-shadow: 0 -1px 0 rgba(34, 34, 34, 0.8);
+}
+header > nav[role="main"] .toggle {
+  font-size: 21px;
+  display: block;
+  margin-bottom: 10px;
+}
+header > nav[role="main"] h1 {
+  color: #dddddd;
+  margin: 0 2em 0;
+  padding: 20px 0;
+}
+header > nav[role="main"] ul {
+  list-style: none;
+  display: none;
+  padding: 20px 0;
+  width: 100%;
+}
+header > nav[role="main"] ul li {
+  display: block;
+}
+header > nav[role="main"] ul li a {
+  display: block;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  color: #c8cec4;
+  text-align: center;
+}
+header > nav[role="main"] ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #15e8cc;
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: url(https://j.gifs.com/g5E8KZ.gif) center center no-repeat;
+ 
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero--image {
+  position: absolute;
+}
+.hero--contents {
+  margin-top: 9vh;
+  border: 2px solid #ffffff;
+  padding: 0 80px 0 80px;
+  text-align: center;
+  width: 68.5%;
+}
+.hero--contents h1 {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  header > nav[role="main"] .toggle {
+    display: none;
+  }
+  header > nav[role="main"] ul {
+    width: auto;
+    display: inline-block;
+  }
+  header > nav[role="main"] ul li {
+    display: inline-block;
+  }
+  header > nav[role="main"] ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #c8cec4;
+  }
+  header > nav[role="main"] ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #15e8cc;
+  }
+}
+
+/*#enddd*/
 
 
  /*start social tabs */
@@ -136,519 +268,770 @@ html, body {border:3px solid #111;
                         transition: all 0.8s;
                     }
                     a {
-                     background:transparent;;   
+                     background:transparent; 
                     }
-                   
-	
-	#cont {margin-top:-5px;width: 100%;padding-top:0;border:5px 5px 7px 5px solid #fff;}
-	#boat {padding-top:0;padding-left:25%;padding-right: 25%;}
-	#colm {text-align: center; max-width: 100%;max-height:100%; background:none;}
 
-#slide-1 {width:100%;
-height:950px;
-  background-image: url("https://j.gifs.com/g5E8KZ.gif");
-  background-position: center center; 
-  background-repeat: none;
-  background-size: cover !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;
-  opacity:1;
-}
 
-/********************************/
-/*          Media Queries       */
-/********************************/
-@media screen and (min-width: 980px){
-    
-}
-@media screen and (max-width: 640px){
-	html, body {overflow:scroll;}
-	#logoPic {padding-top:0;
-		margin-top:-3px;}
-	  ul.social-network li {
-                        display: inline;
-                        margin-left:-15px;
-		  margin-top:-10px;
-                    }
-    .nav {
-		display:none;
-  width: 100%;
-  position: fixed;
-  
-  bottom: 0;
-  left: 0;
-  z-index: 30;
- background-color:#ccc;
- 
-
-}
-.nav li {
-	  display:none;
-	text-align:center;
-	text-justify:center;
-	font-family:logieDistrict;
-    list-style: none;
-    display: inline-block;
-}
-.nav .link {
-	display:none;
-  text-transform: uppercase;
+                    /*buttons for middle of homepage*/
+                    a.animated-button:link, a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size:14px;
+  font-weight: bold;
+  text-align: center;
   text-decoration: none;
-  font-size: 14px;
-  letter-spacing:3px;
-  font-family: Sans-serif;
-  color: #000;
-  margin: 0 10px;
-  opacity:0.55;
-}
-.nav .link:hover {
   text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing:3px;
-  font-family: Sans-serif;
-  color: #000;
-  margin: 0 10px;
-  opacity:1;
+  overflow: hidden;
+  letter-spacing: .08em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
-	.menuHider {display:block;}
-	
-}
-.menuHider {display:none;}
-
-#new { text-align: center;
-font-size: 1.5em;
-color: #fff; 
-display: none;}
-
-.backGif {
-  background-image: url("https://media.giphy.com/media/iTXehJiMjtDFK/giphy.gif") ;/*https://media.giphy.com/media/l2SpXooHKDShYUyeQ/giphy.gif*/
-  height: 210px;
-  background-position:bottom;
-  background-size:cover;
-  
-  
-  
-}
-.caption {
+a.animated-button:link:after, a.animated-button:visited:after {
+  content: "";
   position: absolute;
-  left: 0;
+  height: 0%;
+  left: 50%;
   top: 50%;
   width: 100%;
-  text-align: center;
-  color: #fff;
-  background-color:transparent;
-  font-size:1.8em;
-}
-
-.properBtn {/*border: 0.075em solid #F90; border-radius:5px;*/ margin-top:5%;font-size:65%;background:transparent;padding:5px 7px 5px 7px;color:#f90;} 
-
-@font-face {
-    font-family: logieDistrict;
-    src: url(DistTh__.otf);
-}
-@font-face {
-    font-family: logieFont;
-    src: url(Gilroy-ExtraBold.otf);
-}
-.moveRight {margin-top:10%;margin-left:8%;
-text-align:left;}
-
-#headlg {font-size:420%;
-	font-family:logieFont !important;}
-
-#robo {font-size:420%;margin-top:-2.7%;margin-right:0%;}
-#robo2 {font-size: 220%;margin-top:1.2%;margin-left:10%;}
-#hur {padding:0 1em 0 0.03em; color: #f00 !important;margin-left:2em; margin-top:2.7em; display:inline; float:left;}
-#okl {margin-top:34px;color:#fff;opacity:1;text-align:left}
-#directBottom {font-size:0.6em; text-shadow:0.01em 0.01em #fff;margin-top:3%; margin-left:9%;}
-
-#firstNav {background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:right;padding-right:3%}
-.logiNav {background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:right;min-width:10.21%;}
-#noNavR {opacity:0; min-width:5%;background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:right;}
-.logiNav:hover {opacity: 0.7;color:#ccc;}
-#noNavRL {opacity:1; min-width:6%;background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:left;margin-left:9.70%;}
-#noNavRL:hover {background:#f90 !important;}
-#:hover{-moz-transform: rotate(-360deg);
-                        -webkit-transform: rotate(-360deg);
-                        -ms-transform: rotate(-360deg);
-                        transform: rotate(-360deg);
-                        -webkit-transition: all 0.6s;
-                        -moz-transition: all 0.6s;
-                        -o-transition: all 0.6s;
-                        -ms-transition: all 0.6s;
-                        transition: all 0.6s;}
-#okl:hover {color:#020D1f !important;}
-.intime {display:inline-block;margin-left:-1; float:left;padding:0 7px 0 0;font-size:1.75em; font-family:logieDistrict;}
-  
-  
-  .nav {
-  width: 100%;
-  position: fixed;
-  
-  top: 0;
-  left: 0;
-  z-index: 30;
- background-color:#ccc;
- 
-
-}
-.nav li {text-align:center;
-text-justify:center;
-font-family:logieDistrict;
-  list-style: none;
-  display: inline-block;
-}
-.nav .link {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing:2px;
-  font-family: Sans-serif;
-  color:#000 ;
-  margin: 0 10px;
-  opacity:1;
-}
-.nav .link:hover {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing:2px;
-  font-family: Sans-serif;
-  color: #FD334f;
-  margin: 0 10px;
-  opacity:1;
-}
-	
-	
-
-input {
-  position: fixed;
-  opacity: 0;
-}
-
-label {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
-}
-label::before {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:transparent;
-  content: '';
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-label .burger {
-  position: fixed;
-  top: 1em;
-  left: 1em;
-  z-index: 3;
-  width: 2em;
-  height: 2em;
-  margin: 0;
-  padding: 0;
-  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-label .burger::before,
-label .burger .bar, label .burger::after {
-  position: absolute;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 12%;
-  background: white;
-  content: '';
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-label .burger .bar {
-  top: 44%;
-}
-label .burger::before {
-  top: 0;
-  transform-origin: top left;
-}
-label .burger::after {
-  bottom: 0;
-  transform-origin: bottom left;
-}
-
-input:focus + label .burger,
-label:hover .burger {
-  opacity: .75;
-}
-
-nav {
-	font-family:logieDistrict;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 2;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  transform: translate3d(0, 0, 0);
-  /* material acceleration */
-  transform: translateX(-100%);
-  will-change: transform;
-  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-nav::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
   z-index: -1;
-  width: 25em;
-  background-color:#333;
-  background: -webkit-linear-gradient(-90deg, #111, #000); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #111, #000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #111, #000); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, #111, #000); /* Standard syntax */
-  opacity:0.7;
-  content: '';
-  transform: skewX(15deg) translateX(-100%);
-  transform-origin: bottom left;
-  will-change: transform;
-  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
 }
-@media (min-width: 40em) {
-  nav::before {
-    width: 40em;
-  }
+a.animated-button:link:hover, a.animated-button:visited:hover {
+  color: #FFF;
+  text-shadow: none;
 }
-nav a {
-  margin: .5em 0;
-  padding: .2em 2em;
-  font-size: 1.5em;
-  color: white;
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+  height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size:14px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
   text-decoration: none;
-  font-weight: 500;
-  transform: translateX(-100%);
-  transition: color .15s, transform .5s;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
-nav a:nth-child(1) {
-  transition-delay: 0s, 100ms;
-}
-nav a:nth-child(2) {
-  transition-delay: 0s, 150ms;
-}
-nav a:nth-child(3) {
-  transition-delay: 0s, 200ms;
-}
-nav a:nth-child(4) {
-  transition-delay: 0s, 250ms;
-}
-nav a:nth-child(5) {
-  transition-delay: 0s, 300ms;
-}
-nav a:nth-child(6) {
-  transition-delay: 0s, 350ms;
-}
-nav a:hover, nav a:focus {
-  color: #FD554f;
-}
-
-main {
+  text-transform: uppercase;
   overflow: hidden;
-}
-main .content {
-  transform: translate3d(0, 0, 0);
-  /* material acceleration */
-  will-change: transform, filter;
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-[id="navcheck"]:checked + label::before {
+/* Victoria Buttons */
+
+a.animated-button.victoria-one {
+  border: 2px solid #D24D57;
+}
+a.animated-button.victoria-one:after {
+  background: #D24D57;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.victoria-two {
+  border: 2px solid #D24D57;
+}
+a.animated-button.victoria-two:after {
+  background: #D24D57;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+a.animated-button.victoria-three {
+  border: 2px solid #D24D57;
+}
+a.animated-button.victoria-three:after {
+  background: #D24D57;
+  opacity: .5;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.victoria-three:hover:after {
+  height: 140%;
   opacity: 1;
-  pointer-events: auto;
 }
-[id="navcheck"]:checked + label .burger::before, [id="navcheck"]:checked + label .burger::after {
-  width: 141.42%;
+a.animated-button.victoria-four {
+  border: 2px solid #D24D57;
 }
-[id="navcheck"]:checked + label .burger::before {
-  transform: rotate(45deg) translateY(-50%);
+a.animated-button.victoria-four:after {
+  background: #D24D57;
+  opacity: .5;
+  -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  transform: translateY(-50%) translateX(-50%) rotate(90deg);
 }
-[id="navcheck"]:checked + label .burger::after {
-  transform: rotate(-45deg) translateY(50%);
-}
-[id="navcheck"]:checked + label .burger .bar {
-  transform: scale(0.1);
-}
-[id="navcheck"]:checked ~ nav {
-  transform: translateX(0);
-}
-[id="navcheck"]:checked ~ nav::before {
-  transform: skewX(15deg) translateX(0);
-}
-[id="navcheck"]:checked ~ nav a {
-  transform: translateX(0);
-}
-[id="navcheck"]:checked ~ main .content {
-  transform: translateX(3em);
-  transform-origin: left center;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
-  /* menu :S */
+a.animated-button.victoria-four:hover:after {
+  opacity: 1;
+  height: 600% !important;
 }
 
-/* helper */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
+.btnctas {font-size: 0.75em; }
+#onebtn {margin-top: 67%;}
+                    /*END buttons for middle of hompage*/
+
+ @media (max-width: 1000px){
+                      .moveRight {
+                        font-size: 2em !important;
+                                  margin-top: 2vh !important;}
+
+                      .btnctas {width: 69% !important;
+                                margin-left: 5vw !important;
+                                margin-top: 5vh !important;
+
+                              }
+
+                         .compound-card {display: none !important;}
+
+
+
+                                }
+
+
+
+
+                    @media (max-width: 500px){
+                      .moveRight {display: none;
+                        font-size: 1em !important;
+                                  margin-top: 65vh !important;}
+                      #flames {display: none;
+                        font-size: 0.5em !important;}
+
+                      .btnctas {width: 99% !important;
+                                margin-left: 2.3vw !important;
+                                margin-top: 10vh !important;
+
+                              }
+                      #onebtn {padding-top: 3vh !important;}
+
+                      .social-circle { font-size:3em;position: fixed;bottom: 5px;left: 2px;z-index: 99999;}
+
+                     #firstbtn {padding: 5px 7px 5px 7px;}
+
+                     .compound-card {display: none !important;}
+
+
+                      /*
+                      #prom {margin-top: -20px !important;}*/
+                    }
+
+
+                    .compound-card {margin-top: 100vh;
+  display: flex;
+  max-width: 100%;
+  float: right;
+}
+.five.cards .compound-card {
+  transition: .2s ease-in-out;
+  width: 20%;
+}
+@media (max-width: 1200px) {
+  .five.cards .compound-card {
+    width: calc(100% / 4);
+  }
+}
+@media (max-width: 991px) {
+  .five.cards .compound-card {
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 768px) {
+  .five.cards .compound-card {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 571px) {
+  .five.cards .compound-card {
+    width: 100%;
+  }
+}
+.compound-card > .card {
+  background: white;
+  border-radius: 0;
+  color: #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  margin: .75rem .5rem;
   padding: 0;
+  position: relative;
+  transition: .2s ease-in-out;
+  width: 100%;
+  min-width: calc(20% - 1rem);
+  z-index: 5;
+}
+.compound-card > .card .content {
+  flex-grow: 1;
+  padding: 1rem;
+}
+.compound-card > .card .content .circular.icon {
+  margin-top: calc(50% - 3rem);
   position: absolute;
-  width: 1px;
+  right: -1rem;
 }
-
-/* misc */
-body {
-  overflow-x: hidden;
-  background-color:#000;
-  
-  color: white;
-  font: 1em/1.4 "lato";
+@media (max-width: 991px) {
+  .compound-card > .card .content .circular.icon {
+    display: none;
+  }
 }
-
-main {
-  background-color:#000;
-  background: -webkit-linear-gradient(-90deg, #000, #000); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #000, #000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #000, #222); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, #000, #222); /* Standard syntax */
-  padding: 5% 0;
+.compound-card > .card .content .header {
+  border-bottom: 1px solid transparent;
+  font-size: 130%;
+  font-weight: 700;
+  transition: .2s ease-in-out;
 }
-
-article {
+.compound-card > .card .content .header:hover {
+  border-color: #1e70bf;
+}
+.compound-card > .card .content .header:hover:after {
+  color: rgba(30, 112, 191, 0.3);
+  content: "\f105";
+  font-family: "Icons";
+  padding-left: .5rem;
+}
+.compound-card > .card .content .meta {
+  color: rgba(128, 128, 128, 0.8);
+  font-weight: lighter;
+}
+.compound-card > .card .content .meta + .description {
+  margin-top: .5rem;
+}
+.compound-card > .card .extra {
+  background: #f2fafb;
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+  color: rgba(128, 128, 128, 0.8);
+  flex-grow: 1;
+  max-width: 100%;
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: .75em 1em;
+  top: 0;
+  left: 0;
+  transition: color .1s ease;
+}
+.compound-card > .card .right.angle {
+  color: #fbbd08;
+  cursor: pointer;
+  float: right;
+  transition: .2s ease-in-out;
+}
+.compound-card .expanded {
+  background: gainsboro;
+  display: none;
+  flex-grow: 1;
+  flex: 1;
+  flex-flow: column;
+  margin: .8rem -.65rem .8rem;
+  transition: .2s ease-in-out;
+}
+@media (max-width: 991px) {
+  .compound-card .expanded {
+    display: none;
+  }
+}
+.compound-card .expanded .content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.compound-card .expanded .content .main {
+  flex: 2;
+  padding: 1rem;
+}
+.compound-card .expanded .content .main p {
+  color: grey;
+  font-weight: bold;
+}
+.compound-card .expanded .bar {
+  background: rgba(51, 51, 34, 0.8);
+  display: inline-flex;
+  max-height: 4rem;
+  padding: 1rem;
+}
+.compound-card .expanded .bar span {
+  color: cyan;
+  font-size: 110%;
+  margin-left: 1rem;
+}
+.compound-card .expanded .bar .label {
+  margin-right: .5rem;
+}
+.compound-card .expanded .bar .map-marker {
+  margin-left: auto;
+}
+.compound-card .expanded .menu {
+  display: flex;
+  flex-direction: column;
+}
+.compound-card .expanded.expanding {
+  animation: flexGrow .2s ease-in-out forwards;
+  display: flex;
+  flex: .00001;
   width: 80%;
-  margin: 0 auto;
-  font-size: 1.3em;
 }
-@media (min-width: 60em) {
-  article {
-    width: 50%;
+
+.fadeIn {
+  animation: fadeIn .5s ease-in-out;
+}
+
+.spotlight {
+  width: calc(100% - .75rem);
+  max-width: 100%;
+  position: relative;
+  z-index: 100;
+}
+.spotlight > .card {
+  max-width: calc(20% - .75rem) !important;
+  box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.dimmed {
+  opacity: .1;
+}
+
+@keyframes flexGrow {
+  to {
+    flex: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-h1 {
-  font: 2.5em/1.4;
-  font-weight: 700;
-}
 
 </style>
 </head>
 <body>
-<input class='input' type="checkbox" id="navcheck" role="button" title="menu">
-<label for="navcheck" aria-hidden="true" title="menu">
-	<span class="burger">
-		<span class="bar">
-			<span class="visuallyhidden">Menu</span>
-		</span>
-	</span>
-</label>
-<nav id="menu">
+<!-- 
 
-	 <a href="#block1" class="link">Home </a>
-    <a href="https://www.eventbrite.com" class="link">Find Tickets Now</a>
-    <a href="index3.html" class="link">Show Recaps</a>
-    <a href="index2.html" class="link">My Artists</a>
-    <a href="index4.html" class="link">Cyphers</a>
-</nav>
-<!-- slide1 -->
-  <div class="container">
-  <div class="row">
-  <div class="col-lg-12">
-    <div class="blocks  menuHider" id="block1" onClick="baoBao();">
-    <input class='input menuHider' type="checkbox" id="navcheck" role="button" title="menu">
-<label for="navcheck" aria-hidden="true" title="menu">
-	<span class="burger menuHider">
-		<span class="bar menuHider">
-			<span class="visuallyhidden menuHider">Menu</span>
-		</span>
-	</span>
-</label>
-<nav id="menu" class="menuHider"
-	<a href="#">Home</a>
-	<a href="https://www.eventbrite.com">Find Tickets Now</a>
-	<a href="index3.html">Show Recaps</a>
-	<a href="index2.html">My Artists</a>
-	<a href="index4.html">Cyphers</a>
-</nav>
+-->
 
-	  <div class="container" >
-  <div class="row">
-  <div class="col-lg-12">
+
+
+<header>
+  <nav role="main">
+    <h1><a href="javascript:location.reload();"><img style="width: 75%;margin-left: 32px;" src="http://rs347.pbsrc.com/albums/p447/logothepogo1212/CORDEROFINALLOGOwhtand_zpsug43v5jc.png?w=480&h=480&fit=clip" alt="Logo" class="img-responsive"></a></h1>
+    <ul>
+    
+      <li><a href="">Home</a></li>
+      <li><a href="http://www.eventbrite.com">Find Tickets Now</a></li>
+      <li><a href="recap.html">Show Recaps</a></li>
+      <li><a href="recap.html#artists">My Artists</a></li>
+      <li><a href="recap.html#cyphers">Cyphers</a></li>
+    </ul>
+    <a href="#" class="toggle" title="toggle menu">&#8803; <span>open</span><span style="display: none;">close</span> menu</a>
+  </nav>
+</header>
+
+<div class="hero" style="padding-bottom: 32vh;">
+  <div class="hero--contents" style="margin-top: 1vh;width: 100%;">
+  <h1 class="moveRight" id="headlg" style="font-family:logieFont;font-size: 3em;color: #ffffff;letter-spacing: 3px;margin-top: 20vh; "><span style="margin-left: -1.5%;opacity: 0.5;">WELCOME TO</span><br>&nbsp; CORDERO H&amp;H <br>&nbsp; <span id='prom' style="color: #ffffff;margin-left: 10%; ">  PROMOTIONS.COM</span>🔥 </h1>
+  <div class="container"> 
+  <!-- Example row of columns -->
+  
+
+    <div class="col-md-12 text-center" style='margin-left: 6% ;'>
+      <h2 style="display: none;" id='flames'>🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥</h2>
+    </div>
  
-    <div class="blocks  nadaBlocka" id="block1" onClick="baoBao();">
-     
-    <img id='logoPic' class='img-responsive' src="http://rs347.pbsrc.com/albums/p447/logothepogo1212/CORDEROFINALLOGOwhtand_zpsug43v5jc.png?w=480&h=480&fit=clip"/>
   
-  <!--logo-->
   
-  <p class="moveRight" id="headlg" style="font-family:logieFont;"> Upcoming Shows &amp;,</p>
+    <div id ='onebtn' class="btnctas"  style="width: 12vw;"> <a href="http://www.eventbrite.com" class="btn btn-sm animated-button victoria-one">Buy Tickets</a> </div>
+     <div class="btnctas"  style="width: 12vw;"> <a href="recap.html" class="btn btn-sm animated-button victoria-two">Show Recaps</a> </div>
+    <div class="btnctas" style="width: 12vw;padding-bottom: 20vh;"> <a href="photoG.html" class="btn btn-sm animated-button victoria-three">Photo Gallery</a> </div>
+    
+
+
             
-            <p id='robo' class="moveRight" style="font-family:logieFont;padding-bottom:1%;"> Events . </p>
+         
             
-            <p id="robo2"  class="moveRight intime" style=" font-family: logieFont; "><ul> <li class="intime">B</li><li class="intime">U</li></ul><li class="intime"> Y</li> <li class="intime"> T </li><li class="intime">I </li><li class="intime">C </li><li class="intime">K</li> <li class="intime">E</li> <li class="intime">T</li> <li class="intime">S</li></p>
-           
-            <div class="properBtn" style="font-family: logieFont;font-size:0.85em;margin-left:9.99%;opacity:0;"  href="#"> <span id="okl">LEARN MORE<!--function blastOff--></div> <div id='hur'>__</div>
-           
-           <p id='directBottom' style="font-family:logieDistrict; font-size:1.6em;margin-left:8.21%;padding-bottom:16px;opacity:0;"> Navigate Menu To Discover </p>
+         
+          
+         
            
            
          
            
            
-             <ul class="social-network social-circle" style="display:inline-block;margin-top:-4.92%;margin-left:7px;float:right;">
-                        <li><a href="tel:(630)402-5598" class="icoRss" title="Phone"><i class="fa fa-phone"></i></a></li>
+             <ul class="social-network social-circle" style="display:inline-block;margin-top:-16%;margin-left:7px;float:right;">
+                        <li ><a href="tel:(630)402-5598" class="icoRss" title="Phone"><i class="fa fa-phone"></i></a></li>
                         <li><a href="https://www.facebook.com/search/top/?q=cordero%20%26%20hh%20promotions" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/YOUNGROE59" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCkt8oXYP1oiO_L4Wff6Q1dA" class="icoGoogle" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="https://www.instagram.com/youngroe5/" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li id="firstlink"><a href="https://www.instagram.com/youngroe5/" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                     </ul>
   </div>
-  <div class="nav">
-  <ul>
-  <li> <a style="opacity:0;font-size:2.3em;" href=".." class="link">123456789012345</a></li>
-    <li> <a href="#" class="link">Home </a></li>
-    <li><a href="https://www.eventbrite.com" class="link">Find Tickets Now</a></li>
-    <li><a href="index3.html" class="link">Show Recaps</a></li>
-    <li><a href="index2.html" class="link">My Artists</a></li>
-    <li><a href="index4.html" class="link">Cyphers</a></li>
-   
-  </ul>
-</div>
-  
-  
-  
-  
-  
-    </div>     
-  </div>
-  </div>
+
+
+<div class="ui container" style="width: 100%;display: inline-grid;">
+  <div class="ui five cards">
+
     
+ <div class="compound-card"></div>
+
+  <!--start 4th -->  <div class="compound-card">
+      <div class="card">
+        <div class="content">
+          <a href="#" class="header">H and H</a>
+          <i class="yellow inverted circular right angle icon"></i>
+          <div class="meta">
+            Agent
+          </div>
+          <div class="description">
+            <i class="small grey send icon"></i>    
+            HH@email.com<br>
+            <i class="grey mobile icon"></i>
+            (555) 123 4567<br>
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            123 Street<br>
+            City, ST<br> 
+            12345
+          </span>
+        </div>
+      </div>  
+      <div class="expanded">  
+        <div class="content">
+          <div class="menu">
+            <a href="#">
+              <i class="large inverted yellow bordered id badge icon"></i>
+            </a>
+            <a href="#">
+              <i class="large inverted yellow disabled bordered circle outline user icon"></i>
+            </a>
+          </div>
+          <div class="ui main equal width grid expanding fadeIn">
+            <div class="column">
+              <p>
+                <i class="large grey mobile icon"></i>Phone
+              </p>
+              (555) 987-6543<br>
+              (800) 555-1234
+            </div>
+            <div class="column">
+              <p>
+                <i class="grey send icon"></i>Email              
+              </p>
+
+              email@email.com<br>
+              email@email.com<br>
+            </div>          
+            <div class="column">
+              <p>
+                <i class="grey envelope icon"></i>Alternate address  
+              </p>
+
+              123 Street<br>
+              City, ST<br>
+              12345
+            </div> 
+            <div class="column">
+              <p><i class="grey book icon"></i>Programs</p>
+              <div class="ui blue label">CRM</div>
+            </div>
+          </div>
+        </div>
+        <div class="bar fadeIn">
+          <!-- status -->
+          <div class="ui olive label">active</div>
+  <!--         <div class="ui red label delete icon"><i class="remove icon"></i>inactive</div> -->
+          <!-- preference -->
+          <div class="ui purple label">protected</div>
+          <span> <i class="small circular teal inverted text telephone icon"></i> email</span>
+          <span>
+            <div class="ui tiny grey circular label">MU:</div>
+            Ritter Insurance Marketing, Inc.</span>
+          <span>
+            <div class="ui tiny grey circular label">GPL:</div>
+            2
+          </span>
+          <span>
+            <div class="ui tiny grey circular label">NPN:</div> 
+            12345678
+          </span>
+          <a href="#" class="map-marker"><i class="large orange marker icon"></i></a>
+      </div> 
+      </div>
+    </div><!--/4th-->
+
+   <!--3rd--> <div class="compound-card">
+      <div class="card">
+        <div class="content">
+          <a href="#" class="header">Cordero Dickey</a>
+          <i class="yellow inverted circular right angle icon"></i>
+          <div class="meta">
+            Agent
+          </div>
+          <div class="description">
+            <i class="small grey send icon"></i>    
+            Cordero@email.com<br>
+            <i class="grey mobile icon"></i>
+            (555) 123 4567<br>
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            123 Street<br>
+            City, ST<br> 
+            12345
+          </span>
+        </div>
+      </div>  
+      <div class="expanded">  
+        <div class="content">
+          <div class="menu">
+            <a href="#">
+              <i class="large inverted yellow bordered id badge icon"></i>
+            </a>
+            <a href="#">
+              <i class="large inverted yellow disabled bordered circle outline user icon"></i>
+            </a>
+          </div>
+          <div class="ui main equal width grid expanding fadeIn">
+            <div class="column">
+              <p>
+                <i class="large grey mobile icon"></i>Phone
+              </p>
+              (555) 987-6543
+            </div>
+            <div class="column">
+              <p>
+                <i class="grey send icon"></i>Email              
+              </p>
+
+              email@email.com<br>
+              email@email.com<br>
+            </div>          
+            <div class="column">
+              <p>
+                <i class="grey envelope icon"></i>Alternate address  
+              </p>
+
+              123 Street<br>
+              City, ST<br>
+              12345
+            </div> 
+            <div class="column">
+              <p><i class="grey book icon"></i>Programs</p>
+              <div class="ui blue label">CRM</div>
+            </div>
+          </div>
+        </div>
+        <div class="bar fadeIn">
+          <!-- status -->
+          <div class="ui olive label">active</div>
+  <!--         <div class="ui red label delete icon"><i class="remove icon"></i>inactive</div> -->
+          <!-- preference -->
+          <div class="ui purple label">protected</div>
+          <span> <i class="small circular teal inverted text telephone icon"></i> email</span>
+          <span>
+            <div class="ui tiny grey circular label">MU:</div>
+            Ritter Insurance Marketing, Inc.</span>
+          <span>
+            <div class="ui tiny grey circular label">GPL:</div>
+            2
+          </span>
+          <span>
+            <div class="ui tiny grey circular label">NPN:</div> 
+            12345678
+          </span>
+          <a href="#" class="map-marker"><i class="large orange marker icon"></i></a>
+      </div> 
+      </div>
+    </div><!--/end 3rd-->
+
+   <!--start 2nd--> <div class="compound-card">
+      <div class="card">
+        <div class="content">
+          <a href="#" class="header">Book a Show </a>
+          <i class="yellow inverted circular right angle icon"></i>
+          <div class="meta">
+            Booking
+          </div>
+          <div class="description">
+            <i class="small grey send icon"></i>    
+            booking@email.com<br>
+            <i class="grey mobile icon"></i>
+            (555) 123 4567<br>
+          </div>
+        </div>
+        <div class="extra content">
+          <span>
+            123 Street<br>
+            City, ST<br> 
+            12345
+          </span>
+        </div>
+      </div>  
+      <div class="expanded">  
+        <div class="content">
+          <div class="menu">
+            <a href="#">
+              <i class="large inverted yellow bordered id badge icon"></i>
+            </a>
+            <a href="#">
+              <i class="large inverted yellow disabled bordered circle outline user icon"></i>
+            </a>
+          </div>
+          <div class="ui main equal width grid expanding fadeIn">
+            <div class="column">
+              <p>
+                <i class="large grey mobile icon"></i>Phone
+              </p>
+              (555) 987-6543<br>
+              (800) 555-1234
+            </div>
+            <div class="column">
+              <p>
+                <i class="grey send icon"></i>Email              
+              </p>
+
+              email@email.com<br>
+              email@email.com<br>
+            </div>          
+            <div class="column">
+              <p>
+                <i class="grey envelope icon"></i>Alternate address  
+              </p>
+
+              123 Street<br>
+              City, ST<br>
+              12345
+            </div> 
+            <div class="column">
+              <p><i class="grey book icon"></i>Programs</p>
+              <div class="ui blue label">CRM</div>
+            </div>
+          </div>
+        </div>
+        <div class="bar fadeIn">
+          <!-- status -->
+          <div class="ui olive label">active</div>
+  <!--         <div class="ui red label delete icon"><i class="remove icon"></i>inactive</div> -->
+          <!-- preference -->
+          <div class="ui purple label">protected</div>
+          <span> <i class="small circular teal inverted text telephone icon"></i> email</span>
+          <span>
+            <div class="ui tiny grey circular label">MU:</div>
+            Ritter Insurance Marketing, Inc.</span>
+          <span>
+            <div class="ui tiny grey circular label">GPL:</div>
+            2
+          </span>
+          <span>
+            <div class="ui tiny grey circular label">NPN:</div> 
+            12345678
+          </span>
+          <a href="#" class="map-marker"><i class="large orange marker icon"></i></a>
+      </div> 
+      </div>
+    </div><!--/end 2th-->
 
 
+    <!--start 1st-->
+   <div class="compound-card"></div>
+    
+  </div>
 </div>
-</div>
-</div>
-</div>
+
+  <!--/hero--></div> <!--/hero-->
+
+  <article style="padding-top: 2vh;position: relative; background-color: #202020;width: 100%;height: 62vh;margin-top:  1320px;background-image: url(https://i.pinimg.com/564x/7c/3d/3a/7c3d3afbbc3c38b893d0fe92449747a0.jpg);margin-left: -100%;opacity: 0.9;">. </article>
+  <article style="padding-top: 2vh;position: relative; background-color: #202020;width: 100%;height: 62vh;margin-top:  1320px;margin-left: -100%;opacity: 0.9;">. </article>
+
+
+
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script>jQuery(function() {
+  jQuery('.toggle').on("click", function() {
+    var prevElm = jQuery(this).prev('ul');
+    var spanToggle = jQuery(this).find('span');
+    prevElm.fadeToggle();
+    spanToggle.toggle();
+    return false;
+  })
+  
+ 
+
+    // ELSEWHERE, your code that needs to know the mouse position without an event
+    if (mousePos.x < 10) {
+        // ....
+    }
+});</script>
+<script>$(function() {
+  $('.right.angle:not(.red)').on('click', function() {
+    var self = $(this),
+        card = self.parents('.compound-card'),
+        cardXY = card.position(),
+        newCard = card.clone(),
+        row = $('.five.cards'),
+        rowXY = row.position(),
+        w = row.width();
+    
+    newCard 
+      .insertBefore(card)
+      .css({
+        'position': 'absolute',
+        'top': cardXY.top,
+        'left': cardXY.left,
+        'z-index': 100,
+        'width': (w - 10) + 'px'
+      })
+      .toggleClass('spotlight')
+      .animate({
+          left: (rowXY.left  - 10) + 'px'
+        })  
+      .find('.right.angle')
+      .toggleClass('horizontally flipped orange yellow')
+      .parents('.card')
+      .next()
+      .toggleClass('expanding');
+
+    var active = $('.spotlight'),
+        cards = $('.compound-card:not(.spotlight)');
+
+    active.length > 0 ? cards.toggleClass('dimmed') : cards.removeClass('dimmed');
+  });
+  
+  $(document).on('click', '.horizontally.flipped.icon', function() {
+    var self = $(this),
+        card = self.parents('.compound-card');
+    
+    card.remove();    
+    $('.compound-card').removeClass('dimmed');
+  });  
+  
+});
+
+</script>
 </body>
+</html>
