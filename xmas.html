@@ -873,22 +873,26 @@ p {
   color: white;
   text-transform: uppercase;
   margin-right: 10px;
-  animation: letteranim .3s ease;
+  animation: ease-in .3s ease;
 }
 
-.message {
+.message {margin-left: -20px;
+	font-size: 16px;
+	padding-left: 10px;
+	color: #08f1af;
+	margin-top: 750px !important;
   display: none;
-  padding: 20px;
+  padding: 0px;
   position: absolute;
-  top: 110px;
+  top: 310px;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   /*   height: 100%; */
   background-color: #0091ec;
-  
-  z-index: 12402402;
+
+  z-index: 999999999999999;
 }
 .message h1 {
   display: none;
@@ -905,6 +909,9 @@ p {
   color: white;
   font-size: 30px;
   display: none;
+  position: absolute;
+  z-index: 99999999
+
 }
 .message .text p {
   color: white;
@@ -913,7 +920,7 @@ p {
   font-size: 40px;
 }
 .message .muted {
-	\
+	
   margin: 20px auto;
   color: #86d1ff;
  
@@ -1548,7 +1555,7 @@ Fonts from Google Fonts
       var rating = this.rating();
       this.msgTitle.html("Awesome, You Won!");
       // this is messy
-      this.msgText.html("You solved the word in <span class='highlight'>" + rating.guesses + "</span> Guesses!<br>Score: <span class='highlight'>" + rating.rating + "%</span>");
+      this.msgText.html("You solved the word in <span class='highlight'>" + rating.guesses + "</span> Guesses!<br>Score: <span class='highlight'>" + rating.rating + "</span>");
       this.showMsg();
       this.playSound("winSound");
 
