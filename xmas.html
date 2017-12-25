@@ -781,156 +781,156 @@ svg {
 
 
 
-.hangman {
-  font-family: "Londrina Solid", cursive;
+
+
+
+
+
+.wrappper {
+  width: 100%;
   margin: 0 auto;
-  text-align: center;
-  padding: 10px;
+}
+.wrappper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+canvas {
+  color: #fff;
+  border: #fff dashed 2px;
+  padding: 15px;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 5px 0;
 }
 
 h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-  color: #53BDFF;
-  font-weight: 300;
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 1.6em;
 }
 
 p {
-  margin-bottom: 20px;
-  color: gray;
-  line-height: 1.3;
+  font-size: 1.6em;
 }
 
-@keyframes letteranim {
-  50% {
-    transform: translateY(-5px) scale(1.05);
+#alphabet {
+  font-size: 16px;
+  margin: 15px auto;
+  padding: 0;
+  max-width: 900px;
+}
+#alphabet:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#alphabet li {
+  float: left;
+  margin: 0 10px 10px 0;
+  list-style: none;
+  width: 35px;
+  height: 30px;
+ padding: 5px 7px 5px 7px;
+  background: #fff;
+  color: #460013;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: solid 1px #fff;
+}
+#alphabet li:hover {
+  background: #c1d72e;
+  border: solid 1px #fff;
+  color: #fff;
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display: block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 1.6em;
+}
+
+.active {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+.active:hover {
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#mylives {
+  font-size: 1.6em;
+  text-align: center;
+  display: block;
+}
+
+button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #c1d72e;
+  color: #fff;
+  border: solid 1px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  border: solid 1px #fff;
+  color: #c1d72e;
+}
+
+@media (max-width: 767px) {
+  #alphabet {
+    padding: 0 0 0 15px;
   }
 }
-.letter {
-  display: inline-block;
-  color: transparent;
-  border-bottom: 5px solid #53BDFF;
-  margin: 0 10px;
-  font-size: 50px;
-  padding: 10px;
-  transition: .5s;
-  text-transform: uppercase;
+@media (max-width: 480px) {
+  #alphabet {
+    padding: 0 0 0 25px;
+  }
 }
-
-.word {
-  display: block;
-  white-space: nowrap;
-}
-
-.correct {
-  color: #53BDFF;
-  text-shadow: 1px 2px 0 #20a9ff;
-  animation: letteranim .3s ease;
-}
-
-.guessForm {
-  margin: 20px auto 0;
-}
-.guessForm input, .guessForm .guessButton {
-  font-family: "Londrina Solid", cursive;
-}
-.guessForm input[type="text"] {
-  outline: none;
-  padding: 10px;
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-right: 5px;
-  border: 1px solid #aaa;
-  color: gray;
-}
-.guessForm .guessButton {
-  border: none;
-  font-size: 30px;
-  padding: 10px 20px;
-  cursor: pointer;
-  background: #53BDFF;
-  color: white;
-  transition: .3s;
-  margin: 10px 0;
-  text-shadow: 1px 2px 0 #20a9ff;
-}
-.guessForm .guessButton:hover {
-  background: #20a9ff;
-}
-
-.wrongLetters {
-  font-size: 20px;
-}
-.wrongLetters p {
-  margin-bottom: 10px;
-}
-.wrongLetters li {
-  display: inline-block;
-  font-size: 40px;
-  background: #ff4d4d;
-  text-shadow: 1px 2px 0 red;
-  padding: 10px;
-  color: white;
-  text-transform: uppercase;
-  margin-right: 10px;
-  animation: letteranim .3s ease;
-}
-
-.message {
-  display: none;
-  padding: 20px;
-  position: absolute;
-  top: 110px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  /*   height: 100%; */
-  background: #0091ec;
-  z-index: 12402402;
-}
-.message h1 {
-  display: none;
-  color: white;
-  text-shadow: 1px 2px 0 #ccc;
-}
-.message .highlight {
-  color: yellow;
-  text-transform: capitalize;
-}
-.message .text {
-  color: white;
-  font-size: 30px;
-  display: none;
-}
-.message .text p {
-  color: white;
-}
-.message .text .highlight {
-  font-size: 40px;
-}
-.message .muted {
-  margin: 20px auto;
-  color: #86d1ff;
-}
-
-.button {
-  display: none;
-  margin: 10px 0;
-  border: none;
-  font-size: 30px;
-  padding: 10px 20px;
-  cursor: pointer;
-  background: #34cd39;
-  color: white;
-  transition: .3s;
-  text-shadow: 1px 2px 0 #2EB933;
-  font-family: "Londrina Solid", cursive;
-}
-.button:hover {
-  background: #71dc75;
-}
-
 
 		</style>
 	</head>
@@ -1012,23 +1012,47 @@ p {
 
 </div>
 <div id="wheelholder" style="width: 100%;height: auto;">
-	
 
-
-
-
-<div class="container">
-  <h2 id="cutit">Dear Family, I'm pretty low on cashflow during this holiday season. I love all of you and apologize I don't keep in touch more. I think it is because I feel i have yet to do anything that significant in my life so far. I lack self esteem. Also without a car the last few years in the city. I found my passion and it is web development and being an entreprenuer</h2>
+  <div class="container" style="margin-top: -5.5%;">
+  <h2 id="cutit" style="letter-spacing: 0.16em;">Dear Family, I'm pretty low on cashflow during this holiday season. I love all of you and apologize I don't keep in touch more. I think it is because I feel i have yet to do anything that significant in my life so far. I lack self esteem. Also without a car the last few years in the city. I found my passion and it is web development and being an entreprenuer</h2>
 
   <p>
     <cite>Logan Wilson</cite>
   </p>
 </div>
+	
+<div class="wrapper" style="margin-left: 5%;margin-top: -1%;">
+ 
+    <h2 style="margin-left: 5%;padding: 5px 7px 5px 7px;">Logan's Holiday Hangman Game</h2>
+    <p style="margin-left: 5%;padding: 5px 7px 5px 7px;">Use the alphabet below to guess the word, or click hint to get a clue. </p>
+</div>
+<div class="wrapper" style="margin-left: 10%;font-size: 12px;">
+    <div id="buttons">
+    </div>  
+    <p  id="catagoryName"></p>
+    <div id="hold">
+    </div>
+    <p id="mylives"></p>
+    <p id="clue">Clue -</p>  
+     <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+    <div class="container">
+      <button id="hint">Hint</button>
+      <button id="reset">Play again</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
 
 </div>
 
-<div id="newblock" style="width: 100%;height: 50vh;margin-left: 17.5%;padding: 5px 7px 5px 7px;">
+<div id="newblock" style="width: 100%;height: 50vh;margin-left: 17.5%;padding: 5px 7px 5px 7px;position: absolute;">
 	<script src="https://use.typekit.net/tou5pbt.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -1042,32 +1066,6 @@ p {
             <path d="M50 30L30 40 10 10v80h80V50L70 60"/>
         </svg>
     </div>
-</div>
-
-</div>
-
-
-
-<div id="newew">
-	<hr><hr><hr>
-	<h2>Let's Play</h2>
-
-
-	<div class="hangman">
-  <div class="guess"></div>
-  <form class="guessForm">
-  <input type="text" class="guessLetter" maxlength="1"  placeholder="Enter a letter . . . &#x23ce;"/> <button type="submit" class="guessButton">Guess</button>
-  </form>  
-  <p>Hint: words are web related. <br/></p>
-  <div class="wrong">
-    <div class="wrongLetters"></div>
-  </div>
-  <div class="message">
-    <h1 class="title"></h1>
-    <p class="text"></p>
-    <button class="restart button">Play Again?</button>
-    
-  </div>
 </div>
 
 </div>
@@ -1309,268 +1307,243 @@ setInterval(newTime, 1000);
     },
 });</script>
 
-<script>/*
-* SPOILER ALERT! 
-* WORDS FOR THE GAME ARE IN THIS FILE ;)
-* ©2014 Nate Wiley -- MIT License
-Sounds from http://soundfxnow.com, and http://www.soundjay.com
-Fonts from Google Fonts
-*/
-(function($, window, undefined){
-
-  Hangman = {
-    init: function(words){
-      this.words = words,
-      this.hm = $(".hangman"),
-      this.msg = $(".message"),
-      this.msgTitle = $(".title"),
-      this.msgText = $(".text"),
-      this.restart = $(".restart"),
-      this.wrd = this.randomWord(),
-      this.correct = 0,
-      this.guess = $(".guess"),
-      this.wrong = $(".wrong"),
-      this.wrongGuesses = [],
-      this.rightGuesses = [],
-      this.guessForm = $(".guessForm"),
-      this.guessLetterInput = $(".guessLetter"),
-      this.goodSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/goodbell.mp3"),
-      this.badSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/bad.mp3"),
-      this.winSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/win.mp3"),
-      this.loseSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/lose.mp3"),
-      this.setup();
-    },
 
 
-    setup: function(){
-      this.binding();
-      this.sounds();
-      this.showGuess(this.wrongGuesses);
-      this.showWrong();
+<script>window.onload = function () {
 
-    },
-
-    
-    sounds: function(){  
-      this.badSound.volume = .4;
-      this.goodSound.volume = .4;
-      this.winSound.volume = .8;
-      this.loseSound.volume = .4;
-      
-    },
-    
-    
-    binding: function(){
-      this.guessForm.on("submit", $.proxy(this.theGuess, this));
-      this.restart.on("click", $.proxy(this.theRestart, this));
-    },
-
-
-    playSound: function(sound){
-      this.stopSound(sound);
-      this[sound].play();
-    },
-
-
-    stopSound: function(sound){
-      this[sound].pause();
-      this[sound].currentTime = 0;
-
-    },
-
-
-    theRestart: function(e){
-      e.preventDefault();
-      this.stopSound("winSound");
-      this.stopSound("loseSound");
-      this.reset();
-    },
-
-
-    theGuess: function(e){
-      e.preventDefault();
-      var guess = this.guessLetterInput.val();
-      if(guess.match(/[a-zA-Z]/) && guess.length == 1){
-        if($.inArray(guess, this.wrongGuesses) > -1 || $.inArray(guess, this.rightGuesses) > -1){
-          this.playSound("badSound");
-          this.guessLetterInput.val("").focus();
-        }
-        else if(guess) {
-          var foundLetters = this.checkGuess(guess);
-          if(foundLetters.length > 0){
-            this.setLetters(foundLetters);
-            this.playSound("goodSound");
-            this.guessLetterInput.val("").focus();
-          } else {
-            this.wrongGuesses.push(guess);
-            if(this.wrongGuesses.length == 10){
-              this.lose();
-            } else {
-              this.showWrong(this.wrongGuesses);
-              this.playSound("badSound");
-            }
-            this.guessLetterInput.val("").focus();
-          }
-        }
-      } else {
-        this.guessLetterInput.val("").focus();
-      }
-    },
-
-    randomWord: function(){
-      return this._wordData(this.words[ Math.floor(Math.random() * this.words.length)] );
-    },
-
-
-    showGuess: function(){
-      var frag = "<ul class='word'>";
-      $.each(this.wrd.letters, function(key, val){
-        frag += "<li data-pos='" +  key  + "' class='letter'>*</li>";
-      });
-      frag += "</ul>";
-      this.guess.html(frag);
-    },
-
-
-    showWrong: function(wrongGuesses){
-      if(wrongGuesses){
-        var frag = "<ul class='wrongLetters'>";
-        frag += "<p>Wrong Letters: </p>";
-        $.each(wrongGuesses, function(key, val){
-          frag += "<li>" + val + "</li>";
-        });
-        frag += "</ul>";
-      }
-      else {
-        frag = "";
-      }
-
-      this.wrong.html(frag);
-    },
-
-
-    checkGuess: function(guessedLetter){
-      var _ = this;
-      var found = [];
-      $.each(this.wrd.letters, function(key, val){
-        if(guessedLetter == val.letter.toLowerCase()){
-          found.push(val);
-          _.rightGuesses.push(val.letter);
-        }
-      });
-      return found;
-
-    },
-
-
-    setLetters: function(letters){
-      var _ = this;
-      _.correct = _.correct += letters.length;
-      $.each(letters, function(key, val){
-        var letter = $("li[data-pos=" +val.pos+ "]");
-        letter.html(val.letter);
-        letter.addClass("correct");
-
-        if(_.correct  == _.wrd.letters.length){
-          _.win();
-        }
-      });
-    },
-
-
-    _wordData: function(word){
-
-      return {
-        letters: this._letters(word),
-        word: word.toLowerCase(),
-        totalLetters: word.length
-      };
-    },
-
-
-    hideMsg: function(){
-      this.msg.hide();
-      this.msgTitle.hide();
-      this.restart.hide();
-      this.msgText.hide();
-    },
-
-
-    showMsg: function(){
-      var _ = this;
-      _.msg.show("blind", function(){
-        _.msgTitle.show("bounce", "slow", function(){
-          _.msgText.show("slide", function(){
-            _.restart.show("fade");
-          });
-
-        });
-
-      });
-    },
-
-
-    reset: function(){
-      this.hideMsg();
-      this.init(this.words);
-      this.hm.find(".guessLetter").focus();
-
-    },
-
-
-    _letters: function(word){
-      var letters = [];
-      for(var i=0; i<word.length; i++){
-        letters.push({
-          letter: word[i],
-          pos: i
-        });
-      }
-      return letters;
-    },
-
-
-    rating: function(){
-      var right = this.rightGuesses.length,
-          wrong = this.wrongGuesses.length || 0,
-          rating = {
-            rating: Math.floor(( right / ( wrong + right )) * 100),
-            guesses: (right + wrong)
-            
-          };
-      return rating;
-    },
-
-    win: function(){
-      var rating = this.rating();
-      this.msgTitle.html("Awesome, You Won!");
-      // this is messy
-      this.msgText.html("You solved the word in <span class='highlight'>" + rating.guesses + "</span> Guesses!<br>Score: <span class='highlight'>" + rating.rating + "%</span>");
-      this.showMsg();
-      this.playSound("winSound");
-
-    },
-
-
-    lose: function(){
-      this.msgTitle.html("You Lost.. The word was <span class='highlight'>"+ this.wrd.word +"</span>");
-      this.msgText.html("Don't worry, you'll get the next one!");
-      this.showMsg();
-      this.playSound("loseSound");
-    }
+  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+        'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+        't', 'u', 'v', 'w', 'x', 'y', 'z'];
   
+  var categories;         // Array of topics
+  var chosenCategory;     // Selected catagory
+  var getHint ;          // Word getHint
+  var word ;              // Selected word
+  var guess ;             // Geuss
+  var geusses = [ ];      // Stored geusses
+  var lives ;             // Lives
+  var counter ;           // Count correct geusses
+  var space;              // Number of spaces in word '-'
+
+  // Get elements
+  var showLives = document.getElementById("mylives");
+  var showCatagory = document.getElementById("scatagory");
+  var getHint = document.getElementById("hint");
+  var showClue = document.getElementById("clue");
+
+
+
+  // create alphabet ul
+  var buttons = function () {
+    myButtons = document.getElementById('buttons');
+    letters = document.createElement('ul');
+
+    for (var i = 0; i < alphabet.length; i++) {
+      letters.id = 'alphabet';
+      list = document.createElement('li');
+      list.id = 'letter';
+      list.innerHTML = alphabet[i];
+      check();
+      myButtons.appendChild(letters);
+      letters.appendChild(list);
+    }
+  }
+    
+  
+  // Select Catagory
+  var selectCat = function () {
+    if (chosenCategory === categories[0]) {
+      catagoryName.innerHTML = "The Chosen Category Is Family Members";
+    } else if (chosenCategory === categories[1]) {
+      catagoryName.innerHTML = "The Chosen Category Is Family Members";
+    } else if (chosenCategory === categories[2]) {
+      catagoryName.innerHTML = "The Chosen Category Is Family Members and Xmas Celebrities";
+    }
+  }
+
+  // Create geusses ul
+   result = function () {
+    wordHolder = document.getElementById('hold');
+    correct = document.createElement('ul');
+
+    for (var i = 0; i < word.length; i++) {
+      correct.setAttribute('id', 'my-word');
+      guess = document.createElement('li');
+      guess.setAttribute('class', 'guess');
+      if (word[i] === "-") {
+        guess.innerHTML = "-";
+        space = 1;
+      } else {
+        guess.innerHTML = "_";
+      }
+
+      geusses.push(guess);
+      wordHolder.appendChild(correct);
+      correct.appendChild(guess);
+    }
+  }
+  
+  // Show lives
+   comments = function () {
+    showLives.innerHTML = "You have " + lives + " lives";
+    if (lives < 1) {
+      showLives.innerHTML = "Game Over";
+    }
+    for (var i = 0; i < geusses.length; i++) {
+      if (counter + space === geusses.length) {
+        showLives.innerHTML = "You Win!";
+      }
+    }
+  }
+
+      // Animate man
+  var animate = function () {
+    var drawMe = lives ;
+    drawArray[drawMe]();
+  }
+
+  
+   // Hangman
+  canvas =  function(){
+
+    myStickman = document.getElementById("stickman");
+    context = myStickman.getContext('2d');
+    context.beginPath();
+    context.strokeStyle = "#fff";
+    context.lineWidth = 2;
+  };
+  
+    head = function(){
+      myStickman = document.getElementById("stickman");
+      context = myStickman.getContext('2d');
+      context.beginPath();
+      context.arc(60, 25, 10, 0, Math.PI*2, true);
+      context.stroke();
+    }
+    
+  draw = function($pathFromx, $pathFromy, $pathTox, $pathToy) {
+    
+    context.moveTo($pathFromx, $pathFromy);
+    context.lineTo($pathTox, $pathToy);
+    context.stroke(); 
+}
+
+   frame1 = function() {
+     draw (0, 150, 150, 150);
+   };
+   
+   frame2 = function() {
+     draw (10, 0, 10, 600);
+   };
+  
+   frame3 = function() {
+     draw (0, 5, 70, 5);
+   };
+  
+   frame4 = function() {
+     draw (60, 5, 60, 15);
+   };
+  
+   torso = function() {
+     draw (60, 36, 60, 70);
+   };
+  
+   rightArm = function() {
+     draw (60, 46, 100, 50);
+   };
+  
+   leftArm = function() {
+     draw (60, 46, 20, 50);
+   };
+  
+   rightLeg = function() {
+     draw (60, 70, 100, 100);
+   };
+  
+   leftLeg = function() {
+     draw (60, 70, 20, 100);
+   };
+  
+  drawArray = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, frame4, frame3, frame2, frame1]; 
+
+
+  // OnClick Function
+   check = function () {
+    list.onclick = function () {
+      var geuss = (this.innerHTML);
+      this.setAttribute("class", "active");
+      this.onclick = null;
+      for (var i = 0; i < word.length; i++) {
+        if (word[i] === geuss) {
+          geusses[i].innerHTML = geuss;
+          counter += 1;
+        } 
+      }
+      var j = (word.indexOf(geuss));
+      if (j === -1) {
+        lives -= 1;
+        comments();
+        animate();
+      } else {
+        comments();
+      }
+    }
+  }
+  
+    
+  // Play
+  play = function () {
+    categories = [
+        ["katie", "logan", "donald", "linda", "chris", "terry", "randy"],
+        ["debbie", "Tim", "april", "taka", "bryan"],
+        ["jenna", "candy", "yale", "rudolph", "frosty", "santa", "scrooge"]
+    ];
+
+    chosenCategory = categories[Math.floor(Math.random() * categories.length)];
+    word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
+    word = word.replace(/\s/g, "-");
+    console.log(word);
+    buttons();
+
+    geusses = [ ];
+    lives = 10;
+    counter = 0;
+    space = 0;
+    result();
+    comments();
+    selectCat();
+    canvas();
+  }
+
+  play();
+  
+  // Hint
+
+    hint.onclick = function() {
+
+      hints = [
+        [" one of youngest family members", "made this game", "camera enthusiast from the islands", "has a very soothing voice", "will most likely let you know he is winning at poker", "makes some of the best pastries", "hosts christmas each year"],
+        ["hosts christmas each year", "school band teacher and musician", "tennis lover mother to tanner", "possibly tallest family member moved to cali", "small voice from hawaii",  ],
+        ["loves tennis and most likely late", "the smart one who worked for google", "has a very shiny nose","is one a few snowmen who have names", "brings all the grab bag gifts down your chimney", "says ba hum bug"]
+    ];
+
+    var catagoryIndex = categories.indexOf(chosenCategory);
+    var hintIndex = chosenCategory.indexOf(word);
+    showClue.innerHTML = "Clue: - " +  hints [catagoryIndex][hintIndex];
   };
 
-  var wordList = ["katie", "chris", "terry", "logan", "yale", "candy", "debbie", "randy", "april", "bryan", "donald", "linda", "tim", "nicole", "taka", "angels", "cookies", "dancer", "dasher", "comet", "vixen", "prancer", "cupid", "donner", "blitzen", "snowman", "santa", "holly", "reindeer", "rudolph", "wreath", "carols", "scrooge", "tree", "gift", "mistletoe", "nativity", "boots", "gloves", "eggnog", "blizzard", "fireplace", "lights", "love", "snowball", "shopping", "family", "scarf", "manger", "icicle", "ornament", "stocking", "sweater", "snowflake", "nutcracker", "decorate", "chocolate", "cider", "sleigh", "sled", "holiday", "tinsel", "holiday", "feast", "workshop", "partridge", "elves", "snow"];
+   // Reset
 
-  Hangman.init(wordList);
-  
-})(jQuery, window);
+  document.getElementById('reset').onclick = function() {
+    correct.parentNode.removeChild(correct);
+    letters.parentNode.removeChild(letters);
+    showClue.innerHTML = "";
+    context.clearRect(0, 0, 400, 400);
+    play();
+  }
+}
 
 
-
-  
-  
 </script>
 	</body>
 </html>
