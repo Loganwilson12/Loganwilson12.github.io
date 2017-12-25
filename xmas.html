@@ -873,26 +873,21 @@ p {
   color: white;
   text-transform: uppercase;
   margin-right: 10px;
-  animation: ease-in .3s ease;
+  animation: letteranim .3s ease;
 }
 
-.message {margin-left: -20px;
-	font-size: 16px;
-	padding-left: 10px;
-	color: #08f1af;
-	margin-top: 750px !important;
+.message {
   display: none;
-  padding: 0px;
+  padding: 20px;
   position: absolute;
-  top: 310px;
+  top: 110px;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 90%;
+  width: 100%;
   /*   height: 100%; */
-  background-color: #0091ec;
-
-  z-index: 999999999999999;
+  background: #0091ec;
+  z-index: 12402402;
 }
 .message h1 {
   display: none;
@@ -904,14 +899,9 @@ p {
   text-transform: capitalize;
 }
 .message .text {
-
-
   color: white;
   font-size: 30px;
   display: none;
-  position: absolute;
-  z-index: 99999999
-
 }
 .message .text p {
   color: white;
@@ -920,10 +910,8 @@ p {
   font-size: 40px;
 }
 .message .muted {
-	
   margin: 20px auto;
   color: #86d1ff;
- 
 }
 
 .button {
@@ -1027,27 +1015,7 @@ p {
 	
 
 
-<div class="container">
-	<div class="hangman">
-  <div class="guess"></div>
-  <form class="guessForm">
-  <input type="text" class="guessLetter" maxlength="1"  placeholder="Enter a letter . . . &#x23ce;"/> <button type="submit" class="guessButton">Guess</button><div class="message">
-    <h1 class="title"></h1>
-    <p class="text"></p>
-    <button class="restart button">Play Again?</button>
-    
-  </div>
-  </form>  
-  <p>Hint: words are Xmas related. <br/><a href="https://codepen.io/natewiley">Follow Me on Codepen</a></p>
-  <div class="wrong">
-    <div class="wrongLetters"></div>
-  </div>
-  
-</div>
 
-
-
-</div>
 
 <div class="container">
   <h2 id="cutit">Dear Family, I'm pretty low on cashflow during this holiday season. I love all of you and apologize I don't keep in touch more. I think it is because I feel i have yet to do anything that significant in my life so far. I lack self esteem. Also without a car the last few years in the city. I found my passion and it is web development and being an entreprenuer</h2>
@@ -1080,7 +1048,29 @@ p {
 
 
 
+<div id="newew">
+	<hr><hr><hr>
+	<h2>Let's Play</h2>
 
+
+	<div class="hangman">
+  <div class="guess"></div>
+  <form class="guessForm">
+  <input type="text" class="guessLetter" maxlength="1"  placeholder="Enter a letter . . . &#x23ce;"/> <button type="submit" class="guessButton">Guess</button>
+  </form>  
+  <p>Hint: words are web related. <br/></p>
+  <div class="wrong">
+    <div class="wrongLetters"></div>
+  </div>
+  <div class="message">
+    <h1 class="title"></h1>
+    <p class="text"></p>
+    <button class="restart button">Play Again?</button>
+    
+  </div>
+</div>
+
+</div>
 		<!-- Scripts -->
 
 <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -1555,7 +1545,7 @@ Fonts from Google Fonts
       var rating = this.rating();
       this.msgTitle.html("Awesome, You Won!");
       // this is messy
-      this.msgText.html("You solved the word in <span class='highlight'>" + rating.guesses + "</span> Guesses!<br>Score: <span class='highlight'>" + rating.rating + "</span>");
+      this.msgText.html("You solved the word in <span class='highlight'>" + rating.guesses + "</span> Guesses!<br>Score: <span class='highlight'>" + rating.rating + "%</span>");
       this.showMsg();
       this.playSound("winSound");
 
