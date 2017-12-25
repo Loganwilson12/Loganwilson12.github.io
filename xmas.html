@@ -932,6 +932,65 @@ button:hover {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+.interface {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.photo-booth {
+  background-color: #f6f8eb;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 80px;
+  width: 400px;
+  margin: 0;
+  position: relative;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
+video {
+  display: none;
+  filter: sepia(0.2) contrast(1.2) brightness(1.05) saturate(1.2);
+}
+
+#still {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#preview {
+  transform: rotateY(-180deg);
+}
+
+#clear {
+  display: none;
+}
+
+button {
+  display: block;
+}
+
+.celebs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.celeb img {
+  transform: rotateY(-180deg);
+}
+
 		</style>
 	</head>
 	<body>
@@ -1069,6 +1128,29 @@ button:hover {
 </div>
 
 </div>
+
+<div class="interface" style="margin-top: 500px;position: absolute;z-index: 999999999999999999999;">
+  <div class="photo-booth">
+    <video autoplay id="stream"></video>
+    <canvas id="preview" width="400" height="300"></canvas>
+    <canvas id="still" width="400" height="300"></canvas>
+    <button id="capture">Capture</button>
+    <button id="clear">Try Again</button>
+  </div>
+  <ul class="celebs">
+    <li>
+      <a href="trump" class="celeb">
+        <img src="https://pngimg.com/uploads/barack_obama/barack_obama_PNG61.png" alt="" />
+      </a>
+    </li>
+    <li>
+      <a href="perry" class="celeb">
+        <img src="http://files.gamebanana.com/img/ico/sprays/4f0372f05585d.png" alt="">
+      </a>
+    </li>
+  </ul>
+</div>
+
 		<!-- Scripts -->
 
 <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -1545,5 +1627,90 @@ setInterval(newTime, 1000);
 
 
 </script>
+
+
+
+<script>var preview = document.getElementById('preview');
+var previewContext = preview.getContext('2d');
+var still = document.getElementById('still');
+var stillContext = still.getContext('2d');
+
+var capture = document.getElementById('capture');
+var clear = document.getElementById('clear');
+var video = document.getElementById('stream');
+
+var vendorUrl = window.URL || window.webkitURL;
+var img = new Image();
+
+var celebs = {
+  trump: {
+    src: 'https://pngimg.com/uploads/barack_obama/barack_obama_PNG61.png',
+    right: 160,
+    top: 20
+  },
+  perry: {
+    src: 'http://files.gamebanana.com/img/ico/sprays/4f0372f05585d.png',
+    right: 180,
+    top: 45
+  }
+}
+
+var currentCeleb = {
+  right: 0,
+  top: 0
+}
+
+document.querySelectorAll('.celeb').forEach(function(celeb) {
+  celeb.addEventListener('click', function(e) {
+    e.preventDefault();
+    currentCeleb = celebs[this.getAttribute('href')];
+    img.src = currentCeleb.src;
+  })
+})
+
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+ 
+if (navigator.getUserMedia) {       
+  navigator.getUserMedia({
+    video: true,
+    audio: false
+  }, handleVideo, videoError);
+}
+ 
+function handleVideo(stream) {
+  video.src = vendorUrl.createObjectURL(stream);
+  video.addEventListener('play', drawCanvas)
+  capture.addEventListener('click', createSnapshot)
+  clear.addEventListener('click', clearSnapshot)
+  stillContext.scale(-1, 1)
+}
+
+function drawCanvas() {
+  previewContext.drawImage(video, 0, 0, 400, 300);
+  previewContext.drawImage(img, currentCeleb.right, currentCeleb.top)
+  window.requestAnimationFrame(drawCanvas);
+}
+
+function videoError(e) {
+ console.error('video is broken')
+}
+
+function createSnapshot() {
+  stillContext.clearRect(0, 0, 400, 300);
+  stillContext.drawImage(preview, -400, 0);
+  capture.style.display = 'none'
+  clear.style.display = 'block'
+}
+
+function clearSnapshot() {
+  stillContext.clearRect(0, 0, -400, 300);
+  capture.style.display = 'block'
+  clear.style.display = 'none'
+}
+
+function downloadImage() {
+  download.href = preview.toDataURL();
+  download.download = 'mypicture.jpg';
+}</script>
 	</body>
 </html>
