@@ -1,0 +1,707 @@
+ <!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Untitled</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #022649;
+
+}
+body * {
+  color: #fff;
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.3;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+h4 {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #29FF6A;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 4rem;
+  padding: 0 1rem;
+  font-weight: 700;
+  line-height: 2.5;
+  color: #022649;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#29FF6A), to(#29FF6A));
+  background-image: linear-gradient(#29FF6A, #29FF6A);
+  background-size: 0 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-size 0.25s, -webkit-transform 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: background-size 0.25s, -webkit-transform 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), background-size 0.25s;
+  transition: transform 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), background-size 0.25s, -webkit-transform 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.cta:hover, .cta:active, .cta:focus {
+  background-size: 100% 100%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  background-color: #fff;
+}
+.header * {
+  color: #022649;
+  line-height: 50px;
+}
+
+.branding,
+.header-menu {
+  position: relative;
+  display: block;
+}
+.branding a,
+.header-menu a {
+  display: block;
+  font-size: 1.1rem;
+}
+@media (max-width: 800px) {
+  .branding a,
+  .header-menu a {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .branding a,
+  .header-menu a {
+    font-size: 0.9rem;
+  }
+}
+
+.branding {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  float: left;
+  background-color: #29FF6A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(#fff, #fff);
+  background-size: 0 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-transition: background-size 0.25s;
+  transition: background-size 0.25s;
+}
+.branding:hover, .branding:active, .branding:focus {
+  background-size: 100% 100%;
+}
+.branding a {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-menu {
+  float: right;
+  padding-right: 1rem;
+}
+
+.header-menu .menu-item {
+  position: relative;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+@media (max-width: 480px) {
+  .header-menu .menu-item {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+.header-menu .menu-item:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #29FF6A;
+  -webkit-transition: left 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), width 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: left 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), width 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.header-menu .menu-item:hover:after, .header-menu .menu-item:active:after, .header-menu .menu-item:focus:after {
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding-top: 15%;
+  padding-right: 1rem;
+  padding-bottom: 30%;
+  padding-left: 1rem;
+  background-image: url("https://images.unsplash.com/photo-1453000109878-d4619d01587c?auto=format&fit=crop&w=1052&q=80");
+  background-size: cover;
+}
+
+.hero .wrapper {
+  max-width: 70rem;
+}
+
+.hero-left {
+  width: 60%;
+  padding-right: 1rem;
+}
+
+.hero-right {
+  width: 40%;
+  padding-left: 1rem;
+}
+
+.hero-left,
+.hero-right {
+  position: relative;
+  float: left;
+}
+@media (max-width: 800px) {
+  .hero-left,
+  .hero-right {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 15rem;
+  margin: 0 auto;
+  -webkit-animation: floating 5s -1s infinite;
+          animation: floating 5s -1s infinite;
+}
+@media (max-width: 800px) {
+  .hero-image {
+    max-width: 8rem;
+  }
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes floating {
+  0%, 100% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+.hero-overlay {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-overlay svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.content .wrapper {
+  max-width: 50rem;
+  padding-top: 5%;
+}
+
+.content-box {
+  margin-bottom: 8rem;
+}
+
+.box-header {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 800px) {
+  .box-header {
+    text-align: center;
+  }
+}
+.box-header:before {
+  position: relative;
+  display: block;
+  float: left;
+  padding-right: 0.5rem;
+  font-size: 6.5rem;
+  line-height: 0.9;
+  font-weight: 400;
+  color: #29FF6A;
+}
+@media (max-width: 800px) {
+  .box-header:before {
+    padding-bottom: 1rem;
+    float: none;
+    width: 100%;
+  }
+}
+
+body {
+  counter-reset: countArticles;
+}
+
+.box-header {
+  counter-increment: countArticles;
+}
+
+.box-header:before {
+  content: counter(countArticles,decimal-leading-zero);
+}
+
+
+
+
+.case{
+  width:166px; 
+  height:350px; 
+  background:#fff; 
+  position:relative; 
+  margin:4rem auto;
+  -moz-border-radius:15px; 
+  -webkit-border-radius:15px; 
+  -o-border-radius:15px; 
+  border-radius:15px; 
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+.case:after {
+  content:'';
+  position:absolute;
+  bottom:8px;
+  left:0;
+  width:166px;
+  height:3px;
+  background:none;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  -o-border-radius:50%;
+  border-radius:50%;
+  box-shadow: 0 35px 15px 5px rgba(0,0,0,0.12);
+}
+
+.cam, .voice, .control{position:absolute;box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);clear:both;}
+.cam, .voice {}
+.cam {
+  width:6px; 
+  height:6px;  
+  left:80px; 
+  top:15px; 
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  -o-border-radius:50%;
+  border-radius:50%;
+}
+.voice {
+  width:25px; 
+  height:4px;  
+  left:71px; 
+  top:28px; 
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
+}
+.control {
+  width:30px; 
+  height:30px; 
+  left:70px; 
+  bottom: 11px; 
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  -o-border-radius:50%;
+  border-radius:50%;
+}
+.screen {
+  width:132px; 
+  height:250px;
+  position:absolute;
+  left:17px; 
+  top:50px;
+  background:#C5CC74;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:400;
+  text-align:left;
+  overflow:hidden;
+}
+.screen ul {
+  position:absolute;
+  margin:0px;
+  padding:0px;
+  list-style:none;
+  width:320px;
+  left:0px;
+  display:inline-block;
+  -webkit-transition: all 0.04s linear;
+  -moz-transition: all 0.04s linear;
+  -o-transition: all 0.04s linear;
+  transition: all 0.04s linear;
+}
+.screen ul:hover {left:-140px;}
+.screen ul li {
+  width:132px; 
+  height:250px;
+  display:inline-block;
+  float:left;
+  padding-left:10px;
+  font-size:1.3rem;
+  line-height:1.2rem;
+}
+.screen ul li:first-child {
+  background: url('https://dl.dropboxusercontent.com/u/330966/static/pointer.png') no-repeat 40px  135px #fac200;
+  font-size:2.1rem;
+  font-weight:900;
+  line-height:3rem;
+} 
+.screen ul li .price {
+  font-size:6rem;
+  font-weight:900;
+  font-style:normal;
+  line-height:2.1rem;
+  margin:0px;
+}
+.screen ul li sup {line-height:0px;font-size:2.2rem;}
+.screen ul li a {
+  background:#fff;
+  display:inline-block;
+  padding:1px;
+  color:rgba(0,0,0,0.9); 
+  text-decoration:none;
+  transition: all 0.04s linear;
+}
+.screen ul li a:hover {background:rgba(0,0,0,0.9);color:#fff;}
+
+   </style>
+ </head>
+   <body>
+<!-- the page header -->
+<header class="header group">
+  
+  <!-- logo / brand name -->
+  <h1 class="branding">
+    <a href="#">SaveSmiths.com</a>
+  </h1>
+  
+  
+  <!-- main navigation -->
+  <nav class="header-menu">
+    <ul class="menu-list">
+      
+      <li class="menu-item">
+        <a href="#">Features</a>
+      </li>
+      
+      <li class="menu-item">
+        <a href="#">Pricing</a>
+      </li>
+      
+      <li class="menu-item">
+        <a href="#">Company</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+
+
+<!-- hero -->
+<div class="hero">
+  <div class="wrapper group">
+    
+    <!-- headlines and CTA -->
+    <div class="hero-left">
+      <h4 style="font-size: 1.2rem;">15 minute speedy emergency response time!</h4>
+      <h2 style="color: #ffffff; opacity: 0.9;">You need help fast? You Can Trust SaveSmiths.com</h2>
+      <a class="cta" href="#">Call Now</a>
+    </div>
+    
+    <!-- hero image -->
+    <div class="hero-right">
+      <figure class="hero-image">
+        <img src="https://media.giphy.com/media/xUPGcGOOvmI8jUYhTG/giphy.gif" alt="SaveSmiths.com" />
+      </figure>
+    </div>
+    
+  </div>
+  
+  <!-- overlay -->
+    <span class="hero-overlay">
+      <svg version="1.1" id="hero-overlay" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 1226 250" enable-background="new 0 0 1226 250" xml:space="preserve" PreserveAspectRatio="none">
+        <g>
+          <polygon opacity="0.8" fill="#29FF6A" points="1226,243 0,243 0,228.607 235,99 800.963,138.619 1226,0  "/>
+          <polygon fill="#022649" points="1226,250 0,250 0,228.607 303,91 800.963,138.619 1226,36.907   "/>
+        </g>
+      </svg>
+    </span>
+  
+</div>
+
+
+<!-- page content -->
+<section class="content">
+  <div class="wrapper">
+    <div class="case">
+    <div class="cam"></div>
+    <div class="voice"></div>
+    <div class="screen">
+      <ul>
+        <li>
+          <p style="margin-top: 50%;"><b>NEED A <br> TECH?</b><p>
+        </li>
+        <li style="margin-left: 5px;margin-top: 7px;margin-top: 32%;">
+          <p>only<p>
+          <p class="price"><sup>$</sup>15</p>
+          <p style="margin-top: 10%;">Low Service Fee</p>
+          <a href="#">Call for Estimate</a>
+        </li>
+      </ul>
+    </div>
+    <div class="control"></div>
+</div>
+
+    
+    <!-- articles -->
+    <article class="content-box">
+     <h1> <span style="text-decoration: underline;">EASY INSTRUCTIONS</span></h1>
+      <hgroup class="box-header">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1050&q=80" alt="" class="img-responsive">
+        <h2>Call SaveSmiths 24/7 Hotline</h2>
+        <h3>Don't fret! We are your local friendly service providers! </h3>
+      </hgroup>
+      <div class"box-copy">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+    </article>
+    
+    <article class="content-box">
+      <hgroup class="box-header">
+        <img src="https://images.unsplash.com/photo-1494707924465-e1426acb48cb?auto=format&fit=crop&w=1500&q=80" alt="" class="img-responsive">
+        <h2>Explain to us the situation</h2>
+        <h3>Accurate descriptions help our techs focus on getting us a solution quicker and most accurate.</h3>
+      </hgroup>
+      <div class"box-copy">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+    </article>
+    
+    <article class="content-box">
+      <hgroup class="box-header">
+        <h2>Kick the crap out of 'em.</h2>
+        <h3>Don't run! We are your friends!</h3>
+      </hgroup>
+      <div class"box-copy">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+    </article>
+    
+    <article class="content-box">
+      <hgroup class="box-header">
+        <h2>Kick the crap out of 'em.</h2>
+        <h3>Don't run! We are your friends!</h3>
+      </hgroup>
+      <div class"box-copy">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      </div>
+    </article>
+    
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/skel-viewport.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+      <script>
+
+  /*
+found this function here 
+http://stackoverflow.com/a/26831113
+*/
+
+function inViewport($el) {
+    var H = $(window).height(),
+        r = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+    return Math.max(0, t>0? H-t : (b<H?b:H));  
+}
+
+$(window).on("scroll resize", function(){
+  var window_offset = inViewport($('.hero')); 
+  $(".hero-overlay").height(window_offset);
+});
+
+
+
+
+
+
+
+
+// this script is by Gianluca Pirrera
+// http://pirrera.ch/
+// source > https://codepen.io/pirrera/details/rayoLW/
+// just added "-(10)" on line 41 to hide the nav item underline
+
+;(function(document, window, index) {
+  'use strict';
+
+  var elSelector = '.header',
+  element = document.querySelector(elSelector);
+
+  if (!element) return true;
+
+  var elHeight = 0,
+  elTop = 0,
+  dHeight = 0,
+  wHeight = 0,
+  wScrollCurrent = 0,
+  wScrollBefore = 0,
+  wScrollDiff = 0;
+
+  window.addEventListener('scroll', function() {
+    elHeight = element.offsetHeight;
+    dHeight = document.body.offsetHeight;
+    wHeight = window.innerHeight;
+    wScrollCurrent = window.pageYOffset;
+    wScrollDiff = wScrollBefore - wScrollCurrent;
+    elTop = parseInt(window.getComputedStyle(element).getPropertyValue('top')) + wScrollDiff;
+
+    if (wScrollCurrent <= 0)
+    element.style.top = 'px';
+
+    else if (wScrollDiff > 0)
+    element.style.top = (elTop > 0 ? 0 : elTop) + 'px';
+
+    else if (wScrollDiff < 0) {
+      if (wScrollCurrent + wHeight >= dHeight - elHeight)
+      element.style.top = ((elTop = wScrollCurrent + wHeight - dHeight) < 0 ? elTop : 0) + 'px';
+
+      else
+      element.style.top = (Math.abs(elTop) > elHeight ? -elHeight : elTop) + 'px';
+    }
+
+    wScrollBefore = wScrollCurrent;
+  });
+
+}(document, window, 0));
+  </script>
+
+
+</body>
+</html>
